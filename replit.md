@@ -6,6 +6,22 @@ ValidateNow is a full-stack web application that provides professional SaaS vali
 
 Preferred communication style: Simple, everyday language.
 
+# Recent Changes (August 1, 2025)
+
+## Logo and Branding Updates
+- Updated navigation to use custom logo (first attached image)
+- Updated footer to use "AM" branded logo (second attached image)
+- Maintained ValidateNow branding throughout the application
+- All logos properly sized and positioned with Apple glass aesthetic
+
+## Contact and Booking Integration
+- Integrated Calendly booking link: https://calendly.com/chester-xu1
+- Updated all "Get Started" buttons to "Book Call" linking to Calendly
+- Contact form now routes inquiries to chester.xu1@gmail.com
+- Removed Twitter and YouTube social icons from footer
+- Updated LinkedIn link to: https://www.linkedin.com/in/chester-xu-6919871b9/
+- Contact form button changed to "Send Details" for clarity
+
 # System Architecture
 
 ## Frontend Architecture
