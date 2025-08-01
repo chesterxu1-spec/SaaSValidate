@@ -52,7 +52,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-800 pt-8 mt-8 text-center text-gray-400">
-          <p>&copy; 2024 ValidateNow. All rights reserved. Professional SaaS validation services.</p>
+          <p>© 2024 MoveMore. All rights reserved. Professional SaaS validation services.</p>
         </div>
       </div>
     </footer>
