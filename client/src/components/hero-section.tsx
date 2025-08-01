@@ -47,7 +47,7 @@ export default function HeroSection() {
             <div className="text-gray-600 font-medium">Total Value Delivered</div>
           </div>
           <div className="glass-card p-8 rounded-2xl text-center">
-            <div className="text-4xl font-bold text-gray-900 mb-2">2 Weeks</div>
+            <div className="text-4xl font-bold text-gray-900 mb-2">4 Weeks</div>
             <div className="text-gray-600 font-medium">Complete Validation</div>
           </div>
           <div className="glass-card p-8 rounded-2xl text-center">
