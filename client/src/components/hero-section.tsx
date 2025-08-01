@@ -10,7 +10,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+    <section className="px-4 sm:px-6 lg:px-8 pt-[120px] pb-[120px]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight">
