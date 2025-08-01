@@ -30,6 +30,7 @@ export default function HeroSection() {
               Start Validation - $3,000
             </Button>
             <Button 
+              onClick={() => window.open('https://drive.google.com/file/d/1MY_8p9dOlzAJLPrPgQz6mhu0Ibo5cfiJ/view?usp=sharing', '_blank')}
               variant="outline"
               size="lg"
               className="glass-card px-8 py-4 rounded-xl font-semibold text-gray-900 hover:bg-white/90 transition-all"

@@ -39,12 +39,20 @@ export default function ContactForm() {
       const response = await apiRequest("POST", "/api/contact", data);
       return response.json();
     },
-    onSuccess: () => {
+    onSuccess: (data) => {
       setIsSubmitted(true);
-      toast({
-        title: "Message Sent!",
-        description: "Thank you for your interest! We'll contact you within 24 hours to discuss your validation needs.",
-      });
+      if (data.emailSent) {
+        toast({
+          title: "Message Sent!",
+          description: "Your inquiry has been sent to chester.xu1@gmail.com. We'll contact you within 24 hours.",
+        });
+      } else {
+        toast({
+          title: "Message Received!",
+          description: "Your inquiry was saved but email delivery failed. We'll still contact you within 24 hours.",
+          variant: "destructive",
+        });
+      }
       form.reset();
     },
     onError: (error) => {
