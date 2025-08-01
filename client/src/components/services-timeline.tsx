@@ -19,7 +19,7 @@ export default function ServicesTimeline() {
                 1
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-gray-900">Week 1</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Week 1-2</h3>
                 <p className="text-gray-600 font-medium">Professional Demo Video Creation</p>
               </div>
             </div>
