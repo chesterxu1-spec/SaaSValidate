@@ -176,10 +176,10 @@ export default function ContactForm() {
                   size="lg"
                   className="bg-gray-900 text-white px-12 py-4 rounded-xl font-semibold hover:bg-gray-800 transition-all transform hover:scale-105 text-lg"
                 >
-                  {mutation.isPending ? "Sending..." : "Book Validation Call"}
+                  {mutation.isPending ? "Sending..." : "Send Details"}
                 </Button>
                 <p className="text-sm text-gray-600 mt-4">
-                  We'll respond within 24 hours to schedule your consultation
+                  Your details will be sent to chester.xu1@gmail.com. We'll respond within 24 hours.
                 </p>
               </div>
             </form>

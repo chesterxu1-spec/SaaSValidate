@@ -43,10 +43,10 @@ export default function Navigation() {
               Pricing
             </button>
             <Button 
-              onClick={() => scrollToSection('contact')}
+              onClick={() => window.open('https://calendly.com/chester-xu1', '_blank')}
               className="bg-gray-900 text-white hover:bg-gray-800"
             >
-              Get Started
+              Book Call
             </Button>
           </div>
           
@@ -80,10 +80,10 @@ export default function Navigation() {
                 Pricing
               </button>
               <Button 
-                onClick={() => scrollToSection('contact')}
+                onClick={() => window.open('https://calendly.com/chester-xu1', '_blank')}
                 className="bg-gray-900 text-white hover:bg-gray-800 w-full"
               >
-                Get Started
+                Book Call
               </Button>
             </div>
           </div>

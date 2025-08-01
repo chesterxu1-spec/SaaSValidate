@@ -23,7 +23,7 @@ export default function PricingSection() {
             <div className="text-6xl font-bold text-gray-900 mb-4">$3,000</div>
             <div className="text-xl text-gray-600 mb-6">Complete Validation Package</div>
             <Button 
-              onClick={scrollToContact}
+              onClick={() => window.open('https://calendly.com/chester-xu1', '_blank')}
               size="lg"
               className="bg-gray-900 text-white px-12 py-4 rounded-xl font-semibold hover:bg-gray-800 transition-all transform hover:scale-105 text-lg"
             >

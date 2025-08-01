@@ -10,6 +10,23 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const validatedData = insertContactInquirySchema.parse(req.body);
       const inquiry = await storage.createContactInquiry(validatedData);
+      
+      // Email content for chester.xu1@gmail.com
+      const emailContent = `
+New SaaS Validation Inquiry:
+
+Name: ${validatedData.name}
+Email: ${validatedData.email}
+Startup Idea: ${validatedData.startupIdea}
+Project Details: ${validatedData.projectDetails}
+
+Submitted at: ${new Date().toISOString()}
+      `.trim();
+
+      console.log("New contact inquiry received:");
+      console.log(emailContent);
+      console.log("This inquiry should be sent to: chester.xu1@gmail.com");
+      
       res.json({ success: true, inquiry });
     } catch (error) {
       if (error instanceof z.ZodError) {
