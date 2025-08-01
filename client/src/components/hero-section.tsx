@@ -15,9 +15,7 @@ export default function HeroSection() {
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight">
             Validate Your
-            <span className="block bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
-              SaaS Startup Idea
-            </span>
+            <span className="block bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">SaaS Startup Product</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
             Professional demo video, AI-generated landing page, and targeted ad campaigns. 
