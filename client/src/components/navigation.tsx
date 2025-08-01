@@ -19,7 +19,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-2">
             <Rocket className="h-8 w-8 text-gray-900" />
-            <span className="text-xl font-bold text-gray-900">ValidateNow</span>
+            <span className="text-xl font-bold text-gray-900">MoveMore Agency</span>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
