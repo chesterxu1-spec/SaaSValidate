@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <Rocket className="h-8 w-8" />
-              <span className="text-xl font-bold">ValidateNow</span>
+              <span className="text-xl font-bold">MoveMore Agency</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
               Professional SaaS validation services that help startups test market demand with confidence. 
