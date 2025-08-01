@@ -84,7 +84,7 @@ export default function ServicesTimeline() {
               <div className="flex items-start space-x-3">
                 <Globe className="h-5 w-5 text-gray-900 mt-1" />
                 <div>
-                  <div className="font-semibold text-gray-900">AI-Generated Landing Page</div>
+                  <div className="font-semibold text-gray-900">Landing Page</div>
                   <div className="text-gray-600 text-sm">Conversion Optimized, mobile-optimized</div>
                 </div>
               </div>
