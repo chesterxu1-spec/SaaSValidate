@@ -1,4 +1,4 @@
-import { Rocket } from "lucide-react";
+import logoPath from "@assets/Artboard 1_1_1754026133762.png";
 
 export default function Footer() {
   return (
@@ -7,8 +7,8 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Rocket className="h-8 w-8" />
-              <span className="text-xl font-bold">MoveMore Agency</span>
+              <img src={logoPath} alt="ValidateNow Logo" className="h-8 w-8" />
+              <span className="text-xl font-bold">ValidateNow</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
               Professional SaaS validation services that help startups test market demand with confidence. 
@@ -52,7 +52,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-800 pt-8 mt-8 text-center text-gray-400">
-          <p>© 2024 MoveMore. All rights reserved. Professional SaaS validation services.</p>
+          <p>&copy; 2024 ValidateNow. All rights reserved. Professional SaaS validation services.</p>
         </div>
       </div>
     </footer>
