@@ -1,4 +1,4 @@
-import logoPath from "@assets/Artboard 1_1_1754026133762.png";
+import logoPath from "@assets/Artboard 1_1_1754026306695.png";
 
 export default function Footer() {
   return (
