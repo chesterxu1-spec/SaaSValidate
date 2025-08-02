@@ -6,15 +6,22 @@ ValidateNow is a full-stack web application that provides professional SaaS vali
 
 Preferred communication style: Simple, everyday language.
 
-# Recent Changes (August 1, 2025)
+# Recent Changes (August 2, 2025)
 
-## Logo and Branding Updates
+## Facebook Pixel Integration
+- Added Facebook Pixel tracking code (ID: 24014073838202987) to track website visitors
+- Implemented conversion tracking for all "Book Call" buttons with InitiateCheckout events
+- Added Lead tracking for contact form submissions
+- Proper placement of pixel code in HTML head with noscript fallback in body
+- Event tracking includes content categorization and monetary values ($3,000)
+
+## Logo and Branding Updates (August 1, 2025)
 - Updated navigation to use custom logo (first attached image)
 - Updated footer to use "AM" branded logo (second attached image)
 - Maintained ValidateNow branding throughout the application
 - All logos properly sized and positioned with Apple glass aesthetic
 
-## Contact and Booking Integration
+## Contact and Booking Integration (August 1, 2025)
 - Integrated Calendly booking link: https://calendly.com/chester-xu1
 - Updated all "Get Started" buttons to "Book Call" linking to Calendly
 - Contact form now routes inquiries to chester.xu1@gmail.com

@@ -43,7 +43,16 @@ export default function Navigation() {
               Pricing
             </button>
             <Button 
-              onClick={() => window.open('https://calendly.com/chester-xu1', '_blank')}
+              onClick={() => {
+                // Track Facebook Pixel event
+                if (typeof window !== 'undefined' && (window as any).fbq) {
+                  (window as any).fbq('track', 'InitiateCheckout', {
+                    content_name: 'Book Call - Navigation',
+                    content_category: 'Validation Booking'
+                  });
+                }
+                window.open('https://calendly.com/chester-xu1', '_blank');
+              }}
               className="bg-gray-900 text-white hover:bg-gray-800"
             >
               Book Call

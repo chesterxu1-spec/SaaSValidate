@@ -23,7 +23,18 @@ export default function HeroSection() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button 
-              onClick={() => window.open('https://calendly.com/chester-xu1', '_blank')}
+              onClick={() => {
+                // Track Facebook Pixel event
+                if (typeof window !== 'undefined' && (window as any).fbq) {
+                  (window as any).fbq('track', 'InitiateCheckout', {
+                    content_name: 'Start Validation - Hero',
+                    content_category: 'Validation Booking',
+                    value: 3000,
+                    currency: 'USD'
+                  });
+                }
+                window.open('https://calendly.com/chester-xu1', '_blank');
+              }}
               size="lg"
               className="bg-gray-900 text-white px-8 py-4 rounded-xl font-semibold hover:bg-gray-800 transition-all transform hover:scale-105 text-lg"
             >

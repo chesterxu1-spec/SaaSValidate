@@ -41,6 +41,15 @@ export default function ContactForm() {
     },
     onSuccess: (data) => {
       setIsSubmitted(true);
+      
+      // Track Facebook Pixel Lead event
+      if (typeof window !== 'undefined' && (window as any).fbq) {
+        (window as any).fbq('track', 'Lead', {
+          content_name: 'Contact Form Submission',
+          content_category: 'Validation Request'
+        });
+      }
+      
       if (data.emailSent) {
         toast({
           title: "Message Sent!",
