@@ -26,7 +26,7 @@ export default function HeroSection() {
               onClick={() => {
                 // Track Facebook Pixel event
                 if (typeof window !== 'undefined' && (window as any).fbq) {
-                  (window as any).fbq('track', 'InitiateCheckout', {
+                  (window as any).fbq('track', 'Schedule', {
                     content_name: 'Start Validation - Hero',
                     content_category: 'Validation Booking',
                     value: 3000,

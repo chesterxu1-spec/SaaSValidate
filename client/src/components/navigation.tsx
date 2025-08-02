@@ -46,7 +46,7 @@ export default function Navigation() {
               onClick={() => {
                 // Track Facebook Pixel event
                 if (typeof window !== 'undefined' && (window as any).fbq) {
-                  (window as any).fbq('track', 'InitiateCheckout', {
+                  (window as any).fbq('track', 'Schedule', {
                     content_name: 'Book Call - Navigation',
                     content_category: 'Validation Booking'
                   });
