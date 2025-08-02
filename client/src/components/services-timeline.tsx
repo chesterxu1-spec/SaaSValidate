@@ -100,7 +100,7 @@ export default function ServicesTimeline() {
               <div className="flex items-start space-x-3">
                 <DollarSign className="h-5 w-5 text-gray-900 mt-1" />
                 <div>
-                  <div className="font-semibold text-gray-900">$500 Ad Spend Included</div>
+                  <div className="font-semibold text-gray-900">Ad Spend Handled by Us</div>
                   <div className="text-gray-600 text-sm">Professional campaign management</div>
                 </div>
               </div>
