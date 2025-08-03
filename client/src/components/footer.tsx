@@ -25,7 +25,8 @@ export default function Footer() {
                   if (typeof window !== 'undefined' && (window as any).fbq) {
                     (window as any).fbq('track', 'Contact', {
                       content_name: 'LinkedIn Contact',
-                      content_category: 'Social Media Contact'
+                      content_category: 'Social Media Contact',
+                      test_event_code: 'TEST51046'
                     });
                   }
                 }}

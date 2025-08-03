@@ -30,7 +30,8 @@ export default function PricingSection() {
                     content_name: 'Start Validation - Pricing',
                     content_category: 'Validation Booking',
                     value: 3000,
-                    currency: 'USD'
+                    currency: 'USD',
+                    test_event_code: 'TEST51046'
                   });
                 }
                 window.open('https://calendly.com/chester-xu1', '_blank');

@@ -48,7 +48,8 @@ export default function Navigation() {
                 if (typeof window !== 'undefined' && (window as any).fbq) {
                   (window as any).fbq('track', 'Schedule', {
                     content_name: 'Book Call - Navigation',
-                    content_category: 'Validation Booking'
+                    content_category: 'Validation Booking',
+                    test_event_code: 'TEST51046'
                   });
                 }
                 window.open('https://calendly.com/chester-xu1', '_blank');

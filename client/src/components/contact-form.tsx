@@ -46,7 +46,8 @@ export default function ContactForm() {
       if (typeof window !== 'undefined' && (window as any).fbq) {
         (window as any).fbq('track', 'Lead', {
           content_name: 'Contact Form Submission',
-          content_category: 'Validation Request'
+          content_category: 'Validation Request',
+          test_event_code: 'TEST51046'
         });
       }
       
