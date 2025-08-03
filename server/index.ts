@@ -6,16 +6,15 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Add headers to allow Facebook Pixel to work properly
+// Add headers to allow Facebook Pixel and Meta tools to work properly
 app.use((req, res, next) => {
   // Allow Facebook domains for pixel tracking
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With');
   
-  // Remove restrictive security headers that might block Facebook Pixel
-  res.removeHeader('X-Frame-Options');
-  res.removeHeader('Content-Security-Policy');
+  // Allow Meta/Facebook to embed site in iframe for Event Setup Tool
+  res.setHeader('X-Frame-Options', 'ALLOWALL');
   
   // Allow external scripts and connections for Facebook Pixel
   res.setHeader('X-Content-Type-Options', 'nosniff');
