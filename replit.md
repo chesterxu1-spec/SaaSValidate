@@ -14,7 +14,7 @@ Preferred communication style: Simple, everyday language.
   - **Lead** events for all conversion actions: "Book Call", "Start Validation", and "Send Details"
   - **Contact** events for LinkedIn profile clicks
 - Proper placement of pixel code in HTML head with noscript fallback in body
-- Event tracking includes content categorization and monetary values ($3,000)
+- Event tracking includes content categorization without monetary attribution
 - All events use Meta's recommended standard events for better ad targeting
 - Server headers configured to allow Meta's Event Setup Tool iframe embedding
 

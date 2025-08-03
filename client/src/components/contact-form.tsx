@@ -46,9 +46,7 @@ export default function ContactForm() {
       if (typeof window !== 'undefined' && (window as any).fbq) {
         (window as any).fbq('track', 'Lead', {
           content_name: 'Send Details - Contact Form',
-          content_category: 'Validation Request',
-          currency: 'USD',
-          value: 3000
+          content_category: 'Validation Request'
         });
       }
       

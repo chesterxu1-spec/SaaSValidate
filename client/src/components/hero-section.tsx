@@ -28,9 +28,7 @@ export default function HeroSection() {
                 if (typeof window !== 'undefined' && (window as any).fbq) {
                   (window as any).fbq('track', 'Lead', {
                     content_name: 'Start Validation - Hero',
-                    content_category: 'Validation Booking',
-                    currency: 'USD',
-                    value: 3000
+                    content_category: 'Validation Booking'
                   });
                 }
                 window.open('https://calendly.com/chester-xu1', '_blank');
