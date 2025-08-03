@@ -45,8 +45,10 @@ export default function ContactForm() {
       // Track Meta Pixel Lead event
       if (typeof window !== 'undefined' && (window as any).fbq) {
         (window as any).fbq('track', 'Lead', {
-          content_name: 'Contact Form Submission',
-          content_category: 'Validation Request'
+          content_name: 'Send Details - Contact Form',
+          content_category: 'Validation Request',
+          currency: 'USD',
+          value: 3000
         });
       }
       

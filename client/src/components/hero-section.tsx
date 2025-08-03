@@ -24,13 +24,13 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button 
               onClick={() => {
-                // Track Meta Pixel event
+                // Track Meta Pixel Lead event
                 if (typeof window !== 'undefined' && (window as any).fbq) {
-                  (window as any).fbq('track', 'Schedule', {
+                  (window as any).fbq('track', 'Lead', {
                     content_name: 'Start Validation - Hero',
                     content_category: 'Validation Booking',
-                    value: 3000,
-                    currency: 'USD'
+                    currency: 'USD',
+                    value: 3000
                   });
                 }
                 window.open('https://calendly.com/chester-xu1', '_blank');

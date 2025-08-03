@@ -11,8 +11,7 @@ Preferred communication style: Simple, everyday language.
 ## Meta Pixel Integration
 - Added Meta Pixel tracking code (ID: 24014073838202987) to track website visitors
 - Implemented Meta standard events for optimal ad optimization:
-  - **Schedule** events for all "Book Call" buttons (Calendly bookings)
-  - **Lead** events for contact form submissions
+  - **Lead** events for all conversion actions: "Book Call", "Start Validation", and "Send Details"
   - **Contact** events for LinkedIn profile clicks
 - Proper placement of pixel code in HTML head with noscript fallback in body
 - Event tracking includes content categorization and monetary values ($3,000)
