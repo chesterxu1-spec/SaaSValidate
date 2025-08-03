@@ -27,9 +27,18 @@ export default function HeroSection() {
                 // Track Meta Pixel Lead event
                 try {
                   console.log('Firing Lead event from Hero section');
+                  console.log('Current fbq function:', (window as any).fbq);
+                  console.log('Pixel ID in use:', '24014073838202987');
+                  
                   if (typeof window !== 'undefined' && (window as any).fbq) {
                     (window as any).fbq('track', 'Lead');
                     console.log('Lead event sent successfully');
+                    
+                    // Also try firing a test custom event to see if that works
+                    (window as any).fbq('trackCustom', 'TestEvent', {
+                      test: 'validation_button_click'
+                    });
+                    console.log('Test custom event also sent');
                   }
                 } catch (error) {
                   console.error('Error tracking Lead event:', error);
