@@ -6,11 +6,8 @@
     <title>ValidateNow - SaaS Startup Validation Services</title>
     <meta name="description" content="Professional SaaS validation services for startups. Get $9,000+ value with our $3,000 comprehensive validation package including demo videos, landing pages, and targeted ads." />
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: https:; connect-src 'self' https://connect.facebook.net https://www.facebook.com https://*.facebook.com wss: ws:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://connect.facebook.net https://www.facebook.com https://replit.com; frame-ancestors 'self' https://*.facebook.com https://business.facebook.com https://www.facebook.com;">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="alternate icon" href="/favicon.ico">
-    <link rel="mask-icon" href="/favicon.svg" color="#000000">
     
-    <!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code - Load First -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -22,8 +19,13 @@
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '24014073838202987');
     fbq('track', 'PageView');
+    console.log('Meta Pixel initialized, fbq:', typeof fbq);
     </script>
     <!-- End Meta Pixel Code -->
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="mask-icon" href="/favicon.svg" color="#000000">
   </head>
   <body>
     <noscript><img height="1" width="1" style="display:none"
