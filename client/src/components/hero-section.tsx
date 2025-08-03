@@ -25,11 +25,18 @@ export default function HeroSection() {
             <Button 
               onClick={() => {
                 // Track Meta Pixel Lead event
-                if (typeof window !== 'undefined' && (window as any).fbq) {
-                  (window as any).fbq('track', 'Lead', {
-                    content_name: 'Start Validation - Hero',
-                    content_category: 'Validation Booking'
-                  });
+                try {
+                  if (typeof window !== 'undefined' && (window as any).fbq) {
+                    console.log('Firing Lead event from Hero section');
+                    (window as any).fbq('track', 'Lead', {
+                      content_name: 'Start Validation - Hero',
+                      content_category: 'Validation Booking'
+                    });
+                  } else {
+                    console.log('Meta Pixel not available');
+                  }
+                } catch (error) {
+                  console.error('Error tracking Lead event:', error);
                 }
                 window.open('https://calendly.com/chester-xu1', '_blank');
               }}

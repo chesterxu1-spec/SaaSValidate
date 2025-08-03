@@ -43,11 +43,18 @@ export default function ContactForm() {
       setIsSubmitted(true);
       
       // Track Meta Pixel Lead event
-      if (typeof window !== 'undefined' && (window as any).fbq) {
-        (window as any).fbq('track', 'Lead', {
-          content_name: 'Send Details - Contact Form',
-          content_category: 'Validation Request'
-        });
+      try {
+        if (typeof window !== 'undefined' && (window as any).fbq) {
+          console.log('Firing Lead event from Contact Form');
+          (window as any).fbq('track', 'Lead', {
+            content_name: 'Send Details - Contact Form',
+            content_category: 'Validation Request'
+          });
+        } else {
+          console.log('Meta Pixel not available');
+        }
+      } catch (error) {
+        console.error('Error tracking Lead event:', error);
       }
       
       if (data.emailSent) {
