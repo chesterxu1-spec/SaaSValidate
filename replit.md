@@ -9,7 +9,7 @@ Preferred communication style: Simple, everyday language.
 # Recent Changes (August 2, 2025)
 
 ## Meta Pixel Integration
-- Added Meta Pixel tracking code (ID: 1260479422442660) to track website visitors
+- Added Meta Pixel tracking code (ID: 24014073838202987) to track website visitors
 - Implemented Meta standard events for optimal ad optimization:
   - **Schedule** events for all "Book Call" buttons (Calendly bookings)
   - **Lead** events for contact form submissions
