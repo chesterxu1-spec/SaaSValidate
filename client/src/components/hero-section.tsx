@@ -26,14 +26,27 @@ export default function HeroSection() {
               onClick={() => {
                 // Track Meta Pixel Lead event
                 try {
+                  console.log('Firing Lead event from Hero section');
+                  console.log('fbq available:', typeof (window as any).fbq);
+                  
                   if (typeof window !== 'undefined' && (window as any).fbq) {
-                    console.log('Firing Lead event from Hero section');
                     (window as any).fbq('track', 'Lead', {
                       content_name: 'Start Validation - Hero',
                       content_category: 'Validation Booking'
                     });
+                    console.log('Lead event sent successfully');
                   } else {
-                    console.log('Meta Pixel not available');
+                    console.log('Meta Pixel not available, queuing event');
+                    // Fallback: try to queue the event
+                    if (typeof window !== 'undefined') {
+                      (window as any).fbq = (window as any).fbq || function() { 
+                        ((window as any).fbq.q = (window as any).fbq.q || []).push(arguments); 
+                      };
+                      (window as any).fbq('track', 'Lead', {
+                        content_name: 'Start Validation - Hero',
+                        content_category: 'Validation Booking'
+                      });
+                    }
                   }
                 } catch (error) {
                   console.error('Error tracking Lead event:', error);

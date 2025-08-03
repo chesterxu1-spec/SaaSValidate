@@ -22,6 +22,12 @@
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '24014073838202987');
     fbq('track', 'PageView');
+    
+    // Add debug logging to verify pixel is working
+    window.fbq = window.fbq || function() { 
+      console.log('Meta Pixel called with:', arguments); 
+      (window.fbq.q = window.fbq.q || []).push(arguments); 
+    };
     </script>
     <!-- End Meta Pixel Code -->
   </head>
