@@ -44,12 +44,11 @@ export default function Navigation() {
             </button>
             <Button 
               onClick={() => {
-                // Track Facebook Pixel event
+                // Track Meta Pixel event
                 if (typeof window !== 'undefined' && (window as any).fbq) {
                   (window as any).fbq('track', 'Schedule', {
                     content_name: 'Book Call - Navigation',
-                    content_category: 'Validation Booking',
-                    test_event_code: 'TEST51046'
+                    content_category: 'Validation Booking'
                   });
                 }
                 window.open('https://calendly.com/chester-xu1', '_blank');

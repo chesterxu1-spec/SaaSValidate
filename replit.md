@@ -8,15 +8,16 @@ Preferred communication style: Simple, everyday language.
 
 # Recent Changes (August 2, 2025)
 
-## Facebook Pixel Integration
-- Added Facebook Pixel tracking code (ID: 24014073838202987) to track website visitors
-- Implemented Facebook standard events for optimal ad optimization:
+## Meta Pixel Integration
+- Added Meta Pixel tracking code (ID: 1260479422442660) to track website visitors
+- Implemented Meta standard events for optimal ad optimization:
   - **Schedule** events for all "Book Call" buttons (Calendly bookings)
   - **Lead** events for contact form submissions
   - **Contact** events for LinkedIn profile clicks
 - Proper placement of pixel code in HTML head with noscript fallback in body
 - Event tracking includes content categorization and monetary values ($3,000)
-- All events use Facebook's recommended standard events for better ad targeting
+- All events use Meta's recommended standard events for better ad targeting
+- Server headers configured to allow Meta's Event Setup Tool iframe embedding
 
 ## Logo and Branding Updates (August 1, 2025)
 - Updated navigation to use custom logo (first attached image)

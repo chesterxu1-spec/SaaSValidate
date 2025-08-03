@@ -24,14 +24,13 @@ export default function PricingSection() {
             <div className="text-xl text-gray-600 mb-6">Complete Validation Package</div>
             <Button 
               onClick={() => {
-                // Track Facebook Pixel event
+                // Track Meta Pixel event
                 if (typeof window !== 'undefined' && (window as any).fbq) {
                   (window as any).fbq('track', 'Schedule', {
                     content_name: 'Start Validation - Pricing',
                     content_category: 'Validation Booking',
                     value: 3000,
-                    currency: 'USD',
-                    test_event_code: 'TEST51046'
+                    currency: 'USD'
                   });
                 }
                 window.open('https://calendly.com/chester-xu1', '_blank');
