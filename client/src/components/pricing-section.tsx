@@ -26,11 +26,12 @@ export default function PricingSection() {
               onClick={() => {
                 // Track Meta Pixel Lead event
                 try {
-                  if (typeof window !== 'undefined' && (window as any).fbq) {
-                    console.log('Firing Lead event from Pricing section');
-                    (window as any).fbq('track', 'Lead');
-                    console.log('Lead event sent successfully');
-                  }
+                  setTimeout(() => {
+                    if (typeof window !== 'undefined' && (window as any).fbq) {
+                      (window as any).fbq('track', 'Lead');
+                      console.log('Lead event sent from Pricing');
+                    }
+                  }, 100);
                 } catch (error) {
                   console.error('Error tracking Lead event:', error);
                 }

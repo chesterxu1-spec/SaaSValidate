@@ -26,16 +26,10 @@ export default function HeroSection() {
               onClick={() => {
                 // Track Meta Pixel Lead event
                 try {
-                  console.log('Firing Lead event from Hero section');
-                  console.log('fbq available:', typeof (window as any).fbq);
-                  
-                  // Wait a moment for fbq to be fully loaded if needed
                   setTimeout(() => {
                     if (typeof window !== 'undefined' && (window as any).fbq) {
                       (window as any).fbq('track', 'Lead');
-                      console.log('Lead event sent successfully');
-                    } else {
-                      console.log('Meta Pixel still not available after timeout');
+                      console.log('Lead event sent from Hero');
                     }
                   }, 100);
                 } catch (error) {
