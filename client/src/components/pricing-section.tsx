@@ -28,12 +28,8 @@ export default function PricingSection() {
                 try {
                   if (typeof window !== 'undefined' && (window as any).fbq) {
                     console.log('Firing Lead event from Pricing section');
-                    (window as any).fbq('track', 'Lead', {
-                      content_name: 'Start Validation - Pricing',
-                      content_category: 'Validation Booking'
-                    });
-                  } else {
-                    console.log('Meta Pixel not available');
+                    (window as any).fbq('track', 'Lead');
+                    console.log('Lead event sent successfully');
                   }
                 } catch (error) {
                   console.error('Error tracking Lead event:', error);
