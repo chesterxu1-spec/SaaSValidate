@@ -20,7 +20,7 @@ export default function PricingSection() {
 
         <div className="glass-card p-8 md:p-12 rounded-3xl max-w-3xl mx-auto">
           <div className="text-center mb-8">
-            <div className="text-6xl font-bold text-gray-900 mb-4">$3,000</div>
+            <div className="text-6xl font-bold text-gray-900 mb-4">$5,000</div>
             <div className="text-xl text-gray-600 mb-6">Complete Validation Package</div>
             <Button 
               onClick={() => {
