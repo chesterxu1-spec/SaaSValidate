@@ -1,6 +1,6 @@
 # Overview
 
-ValidateNow is a full-stack web application that provides professional SaaS validation services to startups. The platform helps entrepreneurs test market demand for their startup ideas through comprehensive validation packages that include demo video creation, landing page design, and targeted advertising campaigns. The application features a modern landing page with contact forms, pricing calculators, and service showcases to convert potential clients.
+Movemore is a full-stack web application that provides professional SaaS validation services to startups. The platform helps entrepreneurs test market demand for their startup ideas through comprehensive validation packages that include demo video creation, landing page design, and targeted advertising campaigns. The application features a modern landing page with contact forms, pricing calculators, and service showcases to convert potential clients.
 
 # User Preferences
 
