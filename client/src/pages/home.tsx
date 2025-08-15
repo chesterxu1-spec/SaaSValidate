@@ -1,7 +1,6 @@
 import Navigation from "@/components/navigation";
 import HeroSection from "@/components/hero-section";
 import ServicesTimeline from "@/components/services-timeline";
-import ValidationCalculator from "@/components/validation-calculator";
 import GuaranteeSection from "@/components/guarantee-section";
 import PricingSection from "@/components/pricing-section";
 import ContactForm from "@/components/contact-form";
@@ -13,7 +12,6 @@ export default function Home() {
       <Navigation />
       <HeroSection />
       <ServicesTimeline />
-      <ValidationCalculator />
       <GuaranteeSection />
       <PricingSection />
       <ContactForm />
