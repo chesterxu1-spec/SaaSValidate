@@ -17,10 +17,7 @@ export default function HeroSection() {
             Validate Your
             <span className="block bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">SaaS Startup Product</span>
           </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Professional demo video, AI-generated landing page, and targeted ad campaigns. 
-            Get $9,000+ value for just $3,000 with our comprehensive validation package.
-          </p>
+          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">Professional demo video, converting landing page, and targeted ad campaigns. Get $9,000+ value for just $5,000 with our comprehensive validation package.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button 
               onClick={() => {
