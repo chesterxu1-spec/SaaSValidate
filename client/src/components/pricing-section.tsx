@@ -13,9 +13,7 @@ export default function PricingSection() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Simple, Transparent Pricing</h2>
-          <p className="text-xl text-gray-600">
-            Get $9,000+ in professional services for a fraction of the cost
-          </p>
+          <p className="text-xl text-gray-600">Get $9,000+ in professional services.</p>
         </div>
 
         <div className="glass-card p-8 md:p-12 rounded-3xl max-w-3xl mx-auto">
