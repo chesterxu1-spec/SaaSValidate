@@ -39,9 +39,7 @@ export default function HeroSection() {
               }}
               size="lg"
               className="bg-gray-900 text-white px-8 py-4 rounded-xl font-semibold hover:bg-gray-800 transition-all transform hover:scale-105 text-lg"
-            >
-              Start Validation - $3,000
-            </Button>
+            >Start Validation - $5,000</Button>
             <Button 
               onClick={() => window.open('https://drive.google.com/file/d/1MY_8p9dOlzAJLPrPgQz6mhu0Ibo5cfiJ/view?usp=sharing', '_blank')}
               variant="outline"
