@@ -14,7 +14,7 @@ export default function HeroSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight">
-            <span className="block bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">Go from 10 to 100 users in 30 days</span>
+            <span className="block bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">Get 100 users in 30 days</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">Professional demo video, converting landing page, and targeted ad campaigns. Get $9,000+ value for just $5,000 with our comprehensive validation package.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
