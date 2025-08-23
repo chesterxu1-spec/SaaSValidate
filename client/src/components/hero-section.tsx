@@ -11,9 +11,8 @@ export default function HeroSection() {
           </h2>
           
           {/* Main Heading - Mobile Optimized */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-8 tracking-tight leading-tight px-4 sm:px-0">
-            Get your first 100 users in 4 weeks with a done-for-you marketing engine
-          </h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-8 tracking-tight leading-tight px-4 sm:px-0">100 Users in 4 Weeks with a 
+          "Traction Marketing Engine"</h1>
           
           {/* Supporting Subheading - Lower Hierarchy */}
           <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">
