@@ -6,9 +6,11 @@ export default function HeroSection() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           {/* ICP Callout - Higher Hierarchy */}
-          <h2 className="text-xl md:text-2xl text-gray-700 mb-8 font-semibold tracking-wide">
-            For SaaS, AI & Tech Startup Founders who need traction fast.
-          </h2>
+          <div className="inline-block bg-gray-900 text-white px-6 py-3 rounded-full mb-8">
+            <h2 className="text-lg md:text-xl font-semibold tracking-wide">
+              For SaaS, AI & Tech Startup Founders who need traction fast.
+            </h2>
+          </div>
           
           {/* Main Heading - Mobile Optimized */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-8 tracking-tight leading-tight px-4 sm:px-0">
