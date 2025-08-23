@@ -20,7 +20,7 @@
     <meta name="twitter:description" content="Professional SaaS validation services for startups. Get $9,000+ value with our $3,000 comprehensive validation package." />
     <meta name="twitter:image" content="/movemore-logo.png" />
     
-    <!-- Meta Pixel Code - Load First -->
+    <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -30,8 +30,17 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '24014073838202987');
-    fbq('track', 'PageView');
+    
+    // Initialize pixel with error handling
+    window.addEventListener('load', function() {
+      try {
+        fbq('init', '24014073838202987');
+        fbq('track', 'PageView');
+        console.log('Meta Pixel initialized successfully');
+      } catch (error) {
+        console.error('Meta Pixel initialization error:', error);
+      }
+    });
     </script>
     <!-- End Meta Pixel Code -->
     

@@ -17,12 +17,12 @@ export default function Navigation() {
               onClick={() => {
                 // Track Meta Pixel Lead event
                 try {
-                  setTimeout(() => {
-                    if (typeof window !== 'undefined' && (window as any).fbq) {
-                      (window as any).fbq('track', 'Lead');
-                      console.log('Lead event sent from Navigation');
-                    }
-                  }, 100);
+                  if (typeof window !== 'undefined' && (window as any).fbq) {
+                    (window as any).fbq('track', 'Lead');
+                    console.log('Lead event sent from Navigation - Book Call');
+                  } else {
+                    console.warn('Meta Pixel not available');
+                  }
                 } catch (error) {
                   console.error('Error tracking Lead event:', error);
                 }
