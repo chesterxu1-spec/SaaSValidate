@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 export default function HeroSection() {
+  const [isEditingHeading, setIsEditingHeading] = useState(false);
+  const [headingText, setHeadingText] = useState("Get your first 100 users in 4 weeks with a done-for-you\ntraction marketing engine");
   return (
     <section className="px-4 sm:px-6 lg:px-8 pt-[120px] pb-[120px]">
       <div className="max-w-5xl mx-auto">
@@ -13,10 +16,35 @@ export default function HeroSection() {
           </div>
           
           {/* Main Heading - Mobile Optimized */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-8 tracking-tight leading-tight px-4 sm:px-0">
-            Get your first 100 users in 4 weeks with a done-for-you <br />
-            traction marketing engine
-          </h1>
+          {isEditingHeading ? (
+            <textarea
+              value={headingText}
+              onChange={(e) => setHeadingText(e.target.value)}
+              onBlur={() => setIsEditingHeading(false)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && e.ctrlKey) {
+                  setIsEditingHeading(false);
+                }
+              }}
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-8 tracking-tight leading-tight px-4 sm:px-0 w-full bg-transparent border-2 border-gray-300 rounded-lg resize-none text-center focus:outline-none focus:border-gray-600"
+              autoFocus
+              rows={3}
+              data-testid="input-main-heading"
+            />
+          ) : (
+            <h1 
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-8 tracking-tight leading-tight px-4 sm:px-0 cursor-pointer hover:bg-gray-50 rounded-lg transition-colors"
+              onClick={() => setIsEditingHeading(true)}
+              data-testid="text-main-heading"
+            >
+              {headingText.split('\n').map((line, index) => (
+                <span key={index}>
+                  {line}
+                  {index < headingText.split('\n').length - 1 && <br />}
+                </span>
+              ))}
+            </h1>
+          )}
           
           {/* Supporting Subheading - Lower Hierarchy */}
           <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">
