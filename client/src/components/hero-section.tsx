@@ -5,25 +5,25 @@ export default function HeroSection() {
     <section className="px-4 sm:px-6 lg:px-8 pt-[120px] pb-[120px]">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          {/* ICP Callout */}
-          <p className="text-lg text-gray-600 mb-6 font-medium">
+          {/* ICP Callout - Higher Hierarchy */}
+          <h2 className="text-xl md:text-2xl text-gray-700 mb-8 font-semibold tracking-wide">
             For SaaS, AI & Tech Startup Founders who need traction fast.
-          </p>
+          </h2>
           
-          {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-8 tracking-tight leading-tight">
+          {/* Main Heading - Mobile Optimized */}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-8 tracking-tight leading-tight px-4 sm:px-0">
             Get your first 100 users in 4 weeks with a done-for-you marketing engine
           </h1>
           
-          {/* Supporting Subheading */}
-          <p className="text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
+          {/* Supporting Subheading - Lower Hierarchy */}
+          <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">
             Watch how I help SaaS founders validate their product, attract investors, and build momentum — without burning cash on random marketing tactics.
           </p>
           
           {/* Video Placeholder */}
-          <div className="glass-card p-8 rounded-3xl mb-12 max-w-4xl mx-auto">
+          <div className="glass-card p-4 sm:p-8 rounded-3xl mb-12 max-w-4xl mx-auto">
             <div className="aspect-video bg-gray-100 rounded-xl flex items-center justify-center">
-              <p className="text-gray-500 text-lg">Video will be inserted here</p>
+              <p className="text-gray-500 text-base sm:text-lg">Video will be inserted here</p>
             </div>
           </div>
           
@@ -44,7 +44,8 @@ export default function HeroSection() {
               window.open('https://calendly.com/chester-xu1', '_blank');
             }}
             size="lg"
-            className="bg-gray-900 text-white px-12 py-6 rounded-xl font-semibold hover:bg-gray-800 transition-all transform hover:scale-105 text-xl"
+            className="bg-gray-900 text-white px-8 sm:px-12 py-4 sm:py-6 rounded-xl font-semibold hover:bg-gray-800 transition-all transform hover:scale-105 text-lg sm:text-xl"
+            data-testid="button-book-traction-sprint"
           >
             👉 Book Your Traction Sprint
           </Button>
