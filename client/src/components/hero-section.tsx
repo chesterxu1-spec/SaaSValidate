@@ -6,8 +6,8 @@ export default function HeroSection() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           {/* ICP Callout - Higher Hierarchy */}
-          <div className="inline-block bg-gray-900 text-white px-6 py-3 rounded-full mb-8">
-            <h2 className="text-lg md:text-xl font-semibold tracking-wide">
+          <div className="inline-block bg-gray-900 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full mb-8">
+            <h2 className="text-sm sm:text-base md:text-lg font-semibold tracking-wide">
               For SaaS, AI & Tech Startup Founders who need traction fast.
             </h2>
           </div>
@@ -18,7 +18,7 @@ export default function HeroSection() {
             contentEditable={true}
             suppressContentEditableWarning={true}
             data-testid="editable-main-heading"
-          >100 Users in 4 Weeks with a traction marketing engine <br />
+          >100 Users in 4 Weeks with a <br />
             Traction Marketing Engine
           </h1>
           
