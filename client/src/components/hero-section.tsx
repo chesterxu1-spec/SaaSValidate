@@ -2,19 +2,19 @@ import { Button } from "@/components/ui/button";
 
 export default function HeroSection() {
   return (
-    <section className="px-4 sm:px-6 lg:px-8 pt-[120px] pb-[120px]">
+    <section className="px-3 sm:px-6 lg:px-8 pt-[100px] sm:pt-[120px] pb-[80px] sm:pb-[120px]">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           {/* ICP Callout - Higher Hierarchy */}
-          <div className="inline-block bg-gray-900 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full mb-8">
-            <h2 className="text-sm sm:text-base md:text-lg font-semibold tracking-wide">
+          <div className="inline-block bg-gray-900 text-white px-3 sm:px-6 py-1.5 sm:py-3 rounded-full mb-6 sm:mb-8 mx-2 sm:mx-0">
+            <h2 className="text-xs sm:text-base md:text-lg font-medium sm:font-semibold tracking-wide leading-tight">
               For SaaS, AI & Tech Startup Founders who need traction fast.
             </h2>
           </div>
           
           {/* Main Heading - Mobile Optimized & Editable */}
           <h1 
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-8 tracking-tight leading-tight px-4 sm:px-0 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:bg-gray-50 rounded-lg transition-colors"
+            className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-6 sm:mb-8 tracking-tight leading-tight px-2 sm:px-0 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:bg-gray-50 rounded-lg transition-colors"
             contentEditable={true}
             suppressContentEditableWarning={true}
             data-testid="editable-main-heading"
