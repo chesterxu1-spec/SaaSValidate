@@ -18,8 +18,7 @@ export default function HeroSection() {
             contentEditable={true}
             suppressContentEditableWarning={true}
             data-testid="editable-main-heading"
-          >
-            100 Users in 4 Weeks with a <br />
+          >100 Users in 4 Weeks with a traction marketing engine <br />
             Traction Marketing Engine
           </h1>
           
