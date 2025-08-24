@@ -134,7 +134,6 @@ export default function HeroSection() {
               </video>
             </div>
             <h4 className="text-lg font-bold text-gray-900 mb-2">Style 1</h4>
-            <p className="text-gray-600 text-sm">From concept to investor ready in 4 weeks. Thryft used a product demo video to tell their story and win attention.</p>
           </div>
 
           {/* Case Study 3 */}
@@ -155,7 +154,6 @@ export default function HeroSection() {
               </video>
             </div>
             <h4 className="text-lg font-bold text-gray-900 mb-2">Case Study 3</h4>
-            <p className="text-gray-600 text-sm">Results and metrics for third case study</p>
           </div>
 
           {/* Case Study 4 */}
@@ -176,7 +174,6 @@ export default function HeroSection() {
               </video>
             </div>
             <h4 className="text-lg font-bold text-gray-900 mb-2">Case Study 4</h4>
-            <p className="text-gray-600 text-sm">Results and metrics for fourth case study</p>
           </div>
 
           {/* Case Study 5 */}
@@ -197,7 +194,6 @@ export default function HeroSection() {
               </video>
             </div>
             <h4 className="text-lg font-bold text-gray-900 mb-2">Case Study 5</h4>
-            <p className="text-gray-600 text-sm">Results and metrics for fifth case study</p>
           </div>
         </div>
       </div>
