@@ -156,7 +156,7 @@ export default function HeroSection() {
                 </div>
               </video>
             </div>
-            <h4 className="text-lg font-bold text-gray-900 mb-2">Case Study 3</h4>
+            <h4 className="text-lg font-bold text-gray-900 mb-2">Style 2</h4>
           </div>
 
           {/* Case Study 4 */}
@@ -176,7 +176,7 @@ export default function HeroSection() {
                 </div>
               </video>
             </div>
-            <h4 className="text-lg font-bold text-gray-900 mb-2">Case Study 4</h4>
+            <h4 className="text-lg font-bold text-gray-900 mb-2">Style 3</h4>
           </div>
 
           {/* Case Study 5 */}
@@ -196,7 +196,7 @@ export default function HeroSection() {
                 </div>
               </video>
             </div>
-            <h4 className="text-lg font-bold text-gray-900 mb-2">Case Study 5</h4>
+            <h4 className="text-lg font-bold text-gray-900 mb-2">Style 4</h4>
           </div>
         </div>
       </div>
