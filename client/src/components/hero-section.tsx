@@ -8,7 +8,8 @@ export default function HeroSection() {
           {/* ICP Callout - Higher Hierarchy */}
           <div className="inline-block bg-gray-900 text-white px-3 sm:px-6 py-1.5 sm:py-3 rounded-full mb-6 sm:mb-8 mx-2 sm:mx-0">
             <h2 className="text-xs sm:text-base md:text-lg font-medium sm:font-semibold tracking-wide leading-tight">
-              For SaaS, AI & Tech Startup Founders who need traction fast.
+              <span className="block sm:hidden">For SaaS Founders who need traction</span>
+              <span className="hidden sm:block">For SaaS, AI & Tech Startup Founders who need traction fast.</span>
             </h2>
           </div>
           
