@@ -85,7 +85,7 @@ export default function HeroSection() {
                     playsInline
                     data-testid="video-thryft-hero"
                   >
-                    <source src="/attached_assets/Thryft Product Video Final copy_1756008855364.mp4" type="video/mp4" />
+                    <source src="/attached_assets/Thryft Product Video Final copy_1756009269409.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -95,10 +95,9 @@ export default function HeroSection() {
                   Thryft
                 </h3>
                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                  From concept to 100+ users in 4 weeks. Watch how Thryft built their user base and attracted investor attention with our traction marketing engine.
+                  From concept to investor ready in 4 weeks. Thryft used a product demo video to tell their story and win attention.
                 </p>
                 <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
-                  <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">100+ Users</span>
                   <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">4 Weeks</span>
                   <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">Investor Ready</span>
                 </div>
