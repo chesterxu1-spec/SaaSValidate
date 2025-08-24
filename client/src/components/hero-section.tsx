@@ -139,7 +139,7 @@ export default function HeroSection() {
             <h4 className="text-lg font-bold text-gray-900 mb-2">Style 1</h4>
           </div>
 
-          {/* Case Study 3 */}
+          {/* Style 2 */}
           <div className="glass-card rounded-2xl p-4 sm:p-6">
             <div className="aspect-video rounded-xl overflow-hidden mb-4">
               <video
@@ -148,12 +148,11 @@ export default function HeroSection() {
                 loop
                 muted
                 playsInline
-                data-testid="video-case-study-3"
+                data-testid="video-style-2"
               >
-                {/* Placeholder for third video */}
-                <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                  <p className="text-gray-500">Video 3 placeholder</p>
-                </div>
+                <source src="/style2-demo.mp4" type="video/mp4" />
+                <source src="attached_assets/Screen Recording 2025-08-24 at 2.16.18 pm_1756010382854.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
               </video>
             </div>
             <h4 className="text-lg font-bold text-gray-900 mb-2">Style 2</h4>
