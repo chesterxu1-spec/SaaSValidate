@@ -64,7 +64,7 @@ export default function HeroSection() {
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pb-[80px] sm:pb-[120px]">
         <div className="text-center mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            What you can expect to get
+            Product Demo Videos
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             See how we've helped SaaS startups build traction and attract investors
