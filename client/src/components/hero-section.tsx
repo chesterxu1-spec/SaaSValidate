@@ -84,8 +84,12 @@ export default function HeroSection() {
                     muted
                     playsInline
                     data-testid="video-thryft-hero"
+                    onError={(e) => console.error('Video error:', e)}
+                    onLoadStart={() => console.log('Video loading started')}
+                    onCanPlay={() => console.log('Video can play')}
                   >
-                    <source src="/attached_assets/Thryft Product Video Final copy_1756009269409.mp4" type="video/mp4" />
+                    <source src="/thryft-demo.mp4" type="video/mp4" />
+                    <source src="attached_assets/Thryft Product Video Final copy_1756009269409.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
