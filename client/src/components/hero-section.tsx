@@ -78,7 +78,7 @@ export default function HeroSection() {
               <div className="lg:w-1/2">
                 <div className="aspect-video rounded-xl overflow-hidden">
                   <video
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover scale-[1.001]"
                     autoPlay
                     loop
                     muted
@@ -136,7 +136,7 @@ export default function HeroSection() {
                 Your browser does not support the video tag.
               </video>
             </div>
-            <h4 className="text-lg font-bold text-gray-900 mb-2">Style 1</h4>
+
           </div>
 
           {/* Style 2 */}
@@ -155,7 +155,7 @@ export default function HeroSection() {
                 Your browser does not support the video tag.
               </video>
             </div>
-            <h4 className="text-lg font-bold text-gray-900 mb-2">Style 2</h4>
+
           </div>
 
           {/* Style 3 */}
@@ -174,7 +174,7 @@ export default function HeroSection() {
                 Your browser does not support the video tag.
               </video>
             </div>
-            <h4 className="text-lg font-bold text-gray-900 mb-2">Style 3</h4>
+
           </div>
 
           {/* Style 4 */}
@@ -193,7 +193,7 @@ export default function HeroSection() {
                 Your browser does not support the video tag.
               </video>
             </div>
-            <h4 className="text-lg font-bold text-gray-900 mb-2">Style 4</h4>
+
           </div>
         </div>
       </div>
