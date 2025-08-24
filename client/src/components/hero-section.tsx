@@ -143,7 +143,7 @@ export default function HeroSection() {
           <div className="glass-card rounded-2xl p-4 sm:p-6">
             <div className="aspect-video rounded-xl overflow-hidden mb-4">
               <video
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover scale-110 -translate-y-2"
                 autoPlay
                 loop
                 muted
