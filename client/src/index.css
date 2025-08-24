@@ -94,16 +94,16 @@
     background: linear-gradient(
       90deg,
       #374151 0%,
-      #374151 40%,
-      #ffffff 50%,
-      #374151 60%,
+      #374151 45%,
+      #9ca3af 50%,
+      #374151 55%,
       #374151 100%
     );
     background-size: 200% 100%;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: shine 6s ease-in-out infinite;
+    animation: shine 12s ease-in-out infinite;
   }
   
   @keyframes shine {
