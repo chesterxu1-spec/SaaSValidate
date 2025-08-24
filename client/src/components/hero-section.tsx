@@ -55,7 +55,7 @@ export default function HeroSection() {
             className="bg-gray-900 text-white px-8 sm:px-12 py-4 sm:py-6 rounded-xl font-semibold hover:bg-gray-800 transition-all transform hover:scale-105 text-lg sm:text-xl"
             data-testid="button-book-traction-sprint"
           >
-            👉 Book Your Traction Sprint
+            👉 Book Your Traction Engine
           </Button>
         </div>
       </div>
