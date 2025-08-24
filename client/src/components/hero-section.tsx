@@ -158,7 +158,7 @@ export default function HeroSection() {
             <h4 className="text-lg font-bold text-gray-900 mb-2">Style 2</h4>
           </div>
 
-          {/* Case Study 4 */}
+          {/* Style 3 */}
           <div className="glass-card rounded-2xl p-4 sm:p-6">
             <div className="aspect-video rounded-xl overflow-hidden mb-4">
               <video
@@ -167,12 +167,11 @@ export default function HeroSection() {
                 loop
                 muted
                 playsInline
-                data-testid="video-case-study-4"
+                data-testid="video-style-3"
               >
-                {/* Placeholder for fourth video */}
-                <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                  <p className="text-gray-500">Video 4 placeholder</p>
-                </div>
+                <source src="/style3-demo.mp4" type="video/mp4" />
+                <source src="attached_assets/Potoroo Motion Design copy_1756010718814.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
               </video>
             </div>
             <h4 className="text-lg font-bold text-gray-900 mb-2">Style 3</h4>
