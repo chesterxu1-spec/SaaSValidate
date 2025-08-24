@@ -6,7 +6,27 @@ Movemore is a full-stack web application that provides professional SaaS validat
 
 Preferred communication style: Simple, everyday language.
 
-# Recent Changes (August 2, 2025)
+# Recent Changes (August 24, 2025)
+
+## Case Studies Section Added
+- Created comprehensive case studies section with video support
+- Featured Thryft as hero case study with larger layout and detailed metrics
+- Grid layout for 4 additional case studies
+- All videos set to autoplay, loop, and mute for optimal user experience
+- Glass card design maintains Apple aesthetic throughout
+- Mobile-responsive layout with proper video aspect ratios
+- Placeholder structure ready for 5 MP4 video files
+
+## Mobile Optimization and Animations (August 24, 2025)
+- Implemented responsive text content for mobile vs desktop
+- Added subtle shine animation to main heading (12s loop, left-to-right)
+- Mobile-specific heading text: "100 Users in 4 Weeks with a Traction Engine"
+- Desktop heading: "100 Users in 4 Weeks with a Traction Marketing Engine"
+- Optimized top subheading bubble for mobile: "For SaaS Founders who need traction"
+- Made main heading directly editable with contentEditable attribute
+- Updated supporting subheading to emphasize traction, user base, and investor attraction
+
+# Previous Changes (August 2, 2025)
 
 ## Meta Pixel Integration
 - Added Meta Pixel tracking code (ID: 24014073838202987) to track website visitors

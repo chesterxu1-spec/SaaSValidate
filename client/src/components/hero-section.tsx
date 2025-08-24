@@ -59,6 +59,141 @@ export default function HeroSection() {
           </Button>
         </div>
       </div>
+
+      {/* Case Studies Section */}
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pb-[80px] sm:pb-[120px]">
+        <div className="text-center mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Case Studies
+          </h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            See how we've helped SaaS startups build traction and attract investors
+          </p>
+        </div>
+
+        {/* Hero Case Study - Thryft */}
+        <div className="mb-16">
+          <div className="glass-card rounded-3xl p-6 sm:p-8 mb-8">
+            <div className="flex flex-col lg:flex-row items-center gap-8">
+              <div className="lg:w-1/2">
+                <div className="aspect-video rounded-xl overflow-hidden">
+                  <video
+                    className="w-full h-full object-cover"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    data-testid="video-thryft-hero"
+                  >
+                    <source src="/attached_assets/Thryft Product Video Final copy_1756008855364.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+              <div className="lg:w-1/2 text-center lg:text-left">
+                <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+                  Thryft
+                </h3>
+                <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                  From concept to 100+ users in 4 weeks. Watch how Thryft built their user base and attracted investor attention with our traction marketing engine.
+                </p>
+                <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
+                  <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">100+ Users</span>
+                  <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">4 Weeks</span>
+                  <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">Investor Ready</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Additional Case Studies Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+          {/* Case Study 2 */}
+          <div className="glass-card rounded-2xl p-4 sm:p-6">
+            <div className="aspect-video rounded-xl overflow-hidden mb-4">
+              <video
+                className="w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+                data-testid="video-case-study-2"
+              >
+                {/* Placeholder for second video */}
+                <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+                  <p className="text-gray-500">Video 2 placeholder</p>
+                </div>
+              </video>
+            </div>
+            <h4 className="text-lg font-bold text-gray-900 mb-2">Case Study 2</h4>
+            <p className="text-gray-600 text-sm">Results and metrics for second case study</p>
+          </div>
+
+          {/* Case Study 3 */}
+          <div className="glass-card rounded-2xl p-4 sm:p-6">
+            <div className="aspect-video rounded-xl overflow-hidden mb-4">
+              <video
+                className="w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+                data-testid="video-case-study-3"
+              >
+                {/* Placeholder for third video */}
+                <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+                  <p className="text-gray-500">Video 3 placeholder</p>
+                </div>
+              </video>
+            </div>
+            <h4 className="text-lg font-bold text-gray-900 mb-2">Case Study 3</h4>
+            <p className="text-gray-600 text-sm">Results and metrics for third case study</p>
+          </div>
+
+          {/* Case Study 4 */}
+          <div className="glass-card rounded-2xl p-4 sm:p-6">
+            <div className="aspect-video rounded-xl overflow-hidden mb-4">
+              <video
+                className="w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+                data-testid="video-case-study-4"
+              >
+                {/* Placeholder for fourth video */}
+                <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+                  <p className="text-gray-500">Video 4 placeholder</p>
+                </div>
+              </video>
+            </div>
+            <h4 className="text-lg font-bold text-gray-900 mb-2">Case Study 4</h4>
+            <p className="text-gray-600 text-sm">Results and metrics for fourth case study</p>
+          </div>
+
+          {/* Case Study 5 */}
+          <div className="glass-card rounded-2xl p-4 sm:p-6">
+            <div className="aspect-video rounded-xl overflow-hidden mb-4">
+              <video
+                className="w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+                data-testid="video-case-study-5"
+              >
+                {/* Placeholder for fifth video */}
+                <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+                  <p className="text-gray-500">Video 5 placeholder</p>
+                </div>
+              </video>
+            </div>
+            <h4 className="text-lg font-bold text-gray-900 mb-2">Case Study 5</h4>
+            <p className="text-gray-600 text-sm">Results and metrics for fifth case study</p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
