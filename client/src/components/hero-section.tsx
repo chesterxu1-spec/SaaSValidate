@@ -66,9 +66,6 @@ export default function HeroSection() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Case Studies
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            See how we've helped SaaS startups build traction and attract investors
-          </p>
         </div>
 
         {/* Hero Case Study - Thryft */}
@@ -112,7 +109,7 @@ export default function HeroSection() {
 
         {/* Additional Case Studies Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-          {/* Case Study 2 */}
+          {/* Style 1 */}
           <div className="glass-card rounded-2xl p-4 sm:p-6">
             <div className="aspect-video rounded-xl overflow-hidden mb-4">
               <video
@@ -121,16 +118,23 @@ export default function HeroSection() {
                 loop
                 muted
                 playsInline
-                data-testid="video-case-study-2"
+                data-testid="video-style-1"
+                onLoadedMetadata={(e) => {
+                  const video = e.target as HTMLVideoElement;
+                  video.addEventListener('timeupdate', () => {
+                    if (video.currentTime >= 17) {
+                      video.currentTime = 0;
+                    }
+                  });
+                }}
               >
-                {/* Placeholder for second video */}
-                <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                  <p className="text-gray-500">Video 2 placeholder</p>
-                </div>
+                <source src="/style1-demo.mp4" type="video/mp4" />
+                <source src="attached_assets/Used Car Prices (3)_1756009784803.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
               </video>
             </div>
-            <h4 className="text-lg font-bold text-gray-900 mb-2">Case Study 2</h4>
-            <p className="text-gray-600 text-sm">Results and metrics for second case study</p>
+            <h4 className="text-lg font-bold text-gray-900 mb-2">Style 1</h4>
+            <p className="text-gray-600 text-sm">From concept to investor ready in 4 weeks. Thryft used a product demo video to tell their story and win attention.</p>
           </div>
 
           {/* Case Study 3 */}
