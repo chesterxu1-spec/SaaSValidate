@@ -180,9 +180,9 @@ export default function HeroSection() {
 
           {/* Style 4 */}
           <div className="glass-card rounded-2xl p-4 sm:p-6">
-            <div className="aspect-video rounded-xl overflow-hidden mb-4">
+            <div className="aspect-video rounded-xl overflow-hidden mb-4 bg-black">
               <video
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
                 autoPlay
                 loop
                 muted
