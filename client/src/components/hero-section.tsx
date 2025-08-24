@@ -25,7 +25,7 @@ export default function HeroSection() {
           
           {/* Supporting Subheading - Lower Hierarchy */}
           <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">
-            Watch how I help SaaS founders drive traction, build a user base, and attract investors all within 4 weeks of implementing a marketing engine build for early stage startups.
+            Built for early stage startups
           </p>
           
           {/* Video Placeholder */}
