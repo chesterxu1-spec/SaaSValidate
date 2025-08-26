@@ -84,32 +84,18 @@ export default function HeroSection() {
           <div className="glass-card rounded-3xl p-6 sm:p-8 mb-8">
             <div className="flex flex-col lg:flex-row items-center gap-8">
               <div className="lg:w-1/2">
-                <div className="aspect-video rounded-xl overflow-hidden bg-black">
+                <div className="aspect-video rounded-xl overflow-hidden">
                   <video
-                    src="/thryft-demo.mp4"
                     className="w-full h-full object-cover"
                     autoPlay
                     loop
                     muted
                     playsInline
-                    controls={false}
+                    controls
                     data-testid="video-thryft-hero"
-                    onError={(e) => {
-                      console.error('Thryft video error:', e);
-                      const video = e.target as HTMLVideoElement;
-                      console.error('Video src:', video.src);
-                      console.error('Video readyState:', video.readyState);
-                      console.error('Video networkState:', video.networkState);
-                    }}
-                    onLoadStart={() => console.log('Thryft video loading started')}
-                    onCanPlay={(e) => {
-                      console.log('Thryft video can play');
-                      const video = e.target as HTMLVideoElement;
-                      video.play().catch(err => console.error('Play failed:', err));
-                    }}
-                    onLoadedData={() => console.log('Thryft video data loaded')}
-                    onLoadedMetadata={() => console.log('Thryft video metadata loaded')}
                   >
+                    <source src="/thryft-backup.mp4" type="video/mp4" />
+                    <source src="/thryft-demo.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
