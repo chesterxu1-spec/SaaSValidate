@@ -28,10 +28,18 @@ export default function HeroSection() {
             Watch how I help SaaS founders drive traction, build a user base, and attract investors all within 4 weeks of implementing a marketing engine built for early stage startups.
           </p>
           
-          {/* Video Placeholder */}
+          {/* Embedded YouTube Video */}
           <div className="glass-card p-4 sm:p-8 rounded-3xl mb-12 max-w-4xl mx-auto">
-            <div className="aspect-video bg-gray-100 rounded-xl flex items-center justify-center">
-              <p className="text-gray-500 text-base sm:text-lg">Video will be inserted here</p>
+            <div className="aspect-video rounded-xl overflow-hidden">
+              <iframe
+                src="https://www.youtube.com/embed/dTl487-Kp7g"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="w-full h-full"
+                data-testid="youtube-video-embed"
+              ></iframe>
             </div>
           </div>
           
