@@ -91,10 +91,16 @@ export default function HeroSection() {
                     loop
                     muted
                     playsInline
+                    preload="metadata"
                     data-testid="video-thryft-hero"
-                    onError={(e) => console.error('Video error:', e)}
-                    onLoadStart={() => console.log('Video loading started')}
-                    onCanPlay={() => console.log('Video can play')}
+                    onError={(e) => {
+                      console.error('Thryft video error:', e);
+                      console.error('Video element:', e.target);
+                    }}
+                    onLoadStart={() => console.log('Thryft video loading started')}
+                    onCanPlay={() => console.log('Thryft video can play')}
+                    onLoadedData={() => console.log('Thryft video data loaded')}
+                    onLoadedMetadata={() => console.log('Thryft video metadata loaded')}
                   >
                     <source src="/thryft-demo.mp4" type="video/mp4" />
                     <source src="attached_assets/Thryft Product Video Final copy_1756009269409.mp4" type="video/mp4" />
