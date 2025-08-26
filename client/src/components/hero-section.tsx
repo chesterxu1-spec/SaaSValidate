@@ -84,27 +84,32 @@ export default function HeroSection() {
           <div className="glass-card rounded-3xl p-6 sm:p-8 mb-8">
             <div className="flex flex-col lg:flex-row items-center gap-8">
               <div className="lg:w-1/2">
-                <div className="aspect-video rounded-xl overflow-hidden bg-gray-100">
+                <div className="aspect-video rounded-xl overflow-hidden bg-black">
                   <video
+                    src="/thryft-demo.mp4"
                     className="w-full h-full object-cover"
                     autoPlay
                     loop
                     muted
                     playsInline
-                    preload="auto"
+                    controls={false}
                     data-testid="video-thryft-hero"
-                    style={{ minHeight: '100%', minWidth: '100%' }}
                     onError={(e) => {
                       console.error('Thryft video error:', e);
-                      console.error('Video element:', e.target);
+                      const video = e.target as HTMLVideoElement;
+                      console.error('Video src:', video.src);
+                      console.error('Video readyState:', video.readyState);
+                      console.error('Video networkState:', video.networkState);
                     }}
                     onLoadStart={() => console.log('Thryft video loading started')}
-                    onCanPlay={() => console.log('Thryft video can play')}
+                    onCanPlay={(e) => {
+                      console.log('Thryft video can play');
+                      const video = e.target as HTMLVideoElement;
+                      video.play().catch(err => console.error('Play failed:', err));
+                    }}
                     onLoadedData={() => console.log('Thryft video data loaded')}
                     onLoadedMetadata={() => console.log('Thryft video metadata loaded')}
                   >
-                    <source src="/thryft-demo.mp4" type="video/mp4" />
-                    <source src="attached_assets/Thryft Product Video Final copy_1756009269409.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
