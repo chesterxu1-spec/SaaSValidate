@@ -26,7 +26,7 @@ export default function Navigation() {
                 } catch (error) {
                   console.error('Error tracking Lead event:', error);
                 }
-                window.open('https://calendly.com/chester-xu1', '_blank');
+                window.open('https://calendly.com/chester-xu1/30min', '_blank');
               }}
               className="bg-gray-900 text-white hover:bg-gray-800"
             >

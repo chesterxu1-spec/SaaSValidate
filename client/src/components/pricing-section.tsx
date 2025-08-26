@@ -33,7 +33,7 @@ export default function PricingSection() {
                 } catch (error) {
                   console.error('Error tracking Lead event:', error);
                 }
-                window.open('https://calendly.com/chester-xu1', '_blank');
+                window.open('https://calendly.com/chester-xu1/30min', '_blank');
               }}
               size="lg"
               className="bg-gray-900 text-white px-12 py-4 rounded-xl font-semibold hover:bg-gray-800 transition-all transform hover:scale-105 text-lg"
