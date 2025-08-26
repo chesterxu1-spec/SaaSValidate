@@ -50,7 +50,7 @@ export default function HeroSection() {
               try {
                 if (typeof window !== 'undefined' && (window as any).fbq) {
                   (window as any).fbq('track', 'Lead');
-                  console.log('Lead event sent from Hero - Traction Sprint');
+                  console.log('Lead event sent from Hero - Book Your Traction Engine');
                 } else {
                   console.warn('Meta Pixel not available');
                 }
