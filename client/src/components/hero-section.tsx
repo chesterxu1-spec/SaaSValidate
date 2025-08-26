@@ -84,15 +84,16 @@ export default function HeroSection() {
           <div className="glass-card rounded-3xl p-6 sm:p-8 mb-8">
             <div className="flex flex-col lg:flex-row items-center gap-8">
               <div className="lg:w-1/2">
-                <div className="aspect-video rounded-xl overflow-hidden">
+                <div className="aspect-video rounded-xl overflow-hidden bg-gray-100">
                   <video
-                    className="w-full h-full object-cover scale-[1.001]"
+                    className="w-full h-full object-cover"
                     autoPlay
                     loop
                     muted
                     playsInline
-                    preload="metadata"
+                    preload="auto"
                     data-testid="video-thryft-hero"
+                    style={{ minHeight: '100%', minWidth: '100%' }}
                     onError={(e) => {
                       console.error('Thryft video error:', e);
                       console.error('Video element:', e.target);
