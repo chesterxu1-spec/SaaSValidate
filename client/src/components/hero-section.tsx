@@ -15,7 +15,7 @@ export default function HeroSection() {
           
           {/* Main Heading - Mobile Optimized & Editable */}
           <h1 
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-6 sm:mb-8 tracking-tight leading-normal px-2 sm:px-0 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:bg-gray-50 rounded-lg transition-colors relative overflow-hidden shine-text"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-6 sm:mb-8 tracking-tight leading-normal lg:leading-relaxed px-2 sm:px-0 py-2 lg:py-4 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:bg-gray-50 rounded-lg transition-colors relative overflow-hidden shine-text"
             contentEditable={true}
             suppressContentEditableWarning={true}
             data-testid="editable-main-heading"
