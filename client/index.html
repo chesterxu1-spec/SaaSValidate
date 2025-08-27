@@ -22,20 +22,47 @@
     
     <!-- Meta Pixel Code -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    
-    // Initialize pixel with basic config
-    fbq('init', '24014073838202987', {
-      external_id: 'movemore_pixel'
-    });
-    fbq('track', 'PageView');
+    // Enhanced Meta Pixel with error handling
+    (function() {
+      try {
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;
+        
+        // Add error handling for script loading
+        t.onerror = function() {
+          console.warn('Meta Pixel script failed to load from connect.facebook.net');
+          // Create a minimal fallback fbq function
+          window.fbq = function() {
+            console.log('Meta Pixel fallback - tracking:', arguments[0], arguments[1]);
+          };
+        };
+        
+        s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        
+        // Initialize pixel with basic config after a short delay
+        setTimeout(function() {
+          if (typeof window.fbq === 'function') {
+            fbq('init', '24014073838202987', {
+              external_id: 'movemore_pixel'
+            });
+            fbq('track', 'PageView');
+          }
+        }, 100);
+        
+      } catch (error) {
+        console.warn('Meta Pixel initialization error:', error);
+        // Fallback function for tracking
+        window.fbq = function() {
+          console.log('Meta Pixel fallback - tracking:', arguments[0], arguments[1]);
+        };
+      }
+    })();
     </script>
     <!-- End Meta Pixel Code -->
     
