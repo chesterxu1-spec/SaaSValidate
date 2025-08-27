@@ -50,7 +50,7 @@ export default function HeroSection() {
               try {
                 if (typeof window !== 'undefined' && (window as any).fbq) {
                   (window as any).fbq('track', 'Lead');
-                  console.log('Lead event sent from Hero - Book Your Traction Engine');
+                  console.log('Lead event sent from Hero - Book Your Marketing Engine');
                 } else {
                   console.warn('Meta Pixel not available');
                 }
@@ -63,7 +63,7 @@ export default function HeroSection() {
             className="bg-gray-900 text-white px-8 sm:px-12 py-4 sm:py-6 rounded-xl font-semibold hover:bg-gray-800 transition-all transform hover:scale-105 text-lg sm:text-xl"
             data-testid="button-book-traction-sprint"
           >
-            👉 Book Your Traction Engine
+            👉 Book Your Marketing Engine
           </Button>
         </div>
       </div>
@@ -209,7 +209,7 @@ export default function HeroSection() {
               try {
                 if (typeof window !== 'undefined' && (window as any).fbq) {
                   (window as any).fbq('track', 'Lead');
-                  console.log('Lead event sent from Bottom CTA - Book Your Traction Engine');
+                  console.log('Lead event sent from Bottom CTA - Book Your Marketing Engine');
                 } else {
                   console.warn('Meta Pixel not available');
                 }
@@ -222,7 +222,7 @@ export default function HeroSection() {
             className="bg-gray-900 text-white px-12 sm:px-16 py-6 sm:py-8 rounded-2xl font-bold hover:bg-gray-800 transition-all transform hover:scale-105 text-xl sm:text-2xl shine-button"
             data-testid="button-bottom-traction-engine"
           >
-            👉 Book Your Traction Engine
+            👉 Book Your Marketing Engine
           </Button>
         </div>
       </div>
