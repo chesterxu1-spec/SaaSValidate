@@ -9,6 +9,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
 import { insertContactInquirySchema } from "@shared/schema";
+import { trackContactForm } from "@/lib/analytics";
 import { z } from "zod";
 
 const formSchema = insertContactInquirySchema.extend({
@@ -41,6 +42,9 @@ export default function ContactForm() {
     },
     onSuccess: (data) => {
       setIsSubmitted(true);
+      
+      // Track Google Analytics conversion
+      trackContactForm();
       
       // Track Meta Pixel Lead event
       try {

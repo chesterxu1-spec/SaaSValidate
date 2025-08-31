@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import logoPath from "@assets/Artboard 1_1_1754026133762.png";
+import { trackBookCall } from "@/lib/analytics";
 
 export default function Navigation() {
 
@@ -15,6 +16,9 @@ export default function Navigation() {
           <div className="flex items-center space-x-8">
             <Button 
               onClick={() => {
+                // Track Google Analytics conversion
+                trackBookCall();
+                
                 // Track Meta Pixel Lead event
                 try {
                   if (typeof window !== 'undefined' && (window as any).fbq) {

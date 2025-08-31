@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { trackBookCall, trackVideoPlay } from "@/lib/analytics";
 
 export default function HeroSection() {
   return (
@@ -39,6 +40,7 @@ export default function HeroSection() {
                 allowFullScreen
                 className="w-full h-full"
                 data-testid="youtube-video-embed"
+                onLoad={() => trackVideoPlay('Hero Video - Marketing Engine Demo')}
               ></iframe>
             </div>
           </div>
@@ -46,6 +48,9 @@ export default function HeroSection() {
           {/* CTA Button */}
           <Button 
             onClick={() => {
+              // Track Google Analytics conversion
+              trackBookCall();
+              
               // Track Meta Pixel Lead event
               try {
                 if (typeof window !== 'undefined' && (window as any).fbq) {
