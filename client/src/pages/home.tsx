@@ -14,11 +14,11 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Book Your Marketing Engine</h2>
             <p className="text-lg text-gray-600">Schedule a call to get started with your traction marketing engine</p>
           </div>
-          <div className="glass-card p-6 rounded-3xl">
+          <div className="glass-card p-2 rounded-3xl">
             <iframe 
               src="https://api.leadconnectorhq.com/widget/booking/VjrfycqGgbRgP2RnHUq5" 
-              style={{width: '100%', border: 'none', overflow: 'hidden', minHeight: '600px'}} 
-              scrolling="no" 
+              style={{width: '100%', border: 'none', height: '800px'}} 
+              scrolling="yes" 
               id="zmWnyibfqzh0mQCk3Hns_1757565602373"
               data-testid="calendar-booking-widget"
             ></iframe>
