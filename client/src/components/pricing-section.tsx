@@ -33,7 +33,11 @@ export default function PricingSection() {
                 } catch (error) {
                   console.error('Error tracking Lead event:', error);
                 }
-                window.open('https://calendly.com/chester-xu1/30min', '_blank');
+                // Scroll to calendar section
+                const calendarElement = document.getElementById('calendar');
+                if (calendarElement) {
+                  calendarElement.scrollIntoView({ behavior: 'smooth' });
+                }
               }}
               size="lg"
               className="bg-gray-900 text-white px-12 py-4 rounded-xl font-semibold hover:bg-gray-800 transition-all transform hover:scale-105 text-lg"

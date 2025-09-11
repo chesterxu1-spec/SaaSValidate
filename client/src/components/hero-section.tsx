@@ -62,7 +62,11 @@ export default function HeroSection() {
               } catch (error) {
                 console.error('Error tracking Lead event:', error);
               }
-              window.open('https://calendly.com/chester-xu1/30min', '_blank');
+              // Scroll to calendar section
+              const calendarElement = document.getElementById('calendar');
+              if (calendarElement) {
+                calendarElement.scrollIntoView({ behavior: 'smooth' });
+              }
             }}
             size="lg"
             className="bg-gray-900 text-white px-8 sm:px-12 py-4 sm:py-6 rounded-xl font-semibold hover:bg-gray-800 transition-all transform hover:scale-105 text-lg sm:text-xl"
@@ -221,7 +225,11 @@ export default function HeroSection() {
               } catch (error) {
                 console.error('Error tracking Lead event:', error);
               }
-              window.open('https://calendly.com/chester-xu1/30min', '_blank');
+              // Scroll to calendar section
+              const calendarElement = document.getElementById('calendar');
+              if (calendarElement) {
+                calendarElement.scrollIntoView({ behavior: 'smooth' });
+              }
             }}
             size="lg"
             className="bg-gray-900 text-white px-12 sm:px-16 py-6 sm:py-8 rounded-2xl font-bold hover:bg-gray-800 transition-all transform hover:scale-105 text-xl sm:text-2xl shine-button"
