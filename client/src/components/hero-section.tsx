@@ -29,19 +29,17 @@ export default function HeroSection() {
             Watch how I help SaaS founders drive traction, build a user base, and attract investors all within 4 weeks of implementing a marketing engine built for early stage startups.
           </p>
           
-          {/* Embedded YouTube Video */}
+          {/* Embedded Wistia Video */}
           <div className="glass-card p-4 sm:p-8 rounded-3xl mb-12 max-w-4xl mx-auto">
             <div className="aspect-video rounded-xl overflow-hidden">
-              <iframe
-                src="https://www.youtube.com/embed/AlU0WbYEv6g?hd=1&quality=hd1080&vq=hd1080"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
+              <div 
                 className="w-full h-full"
-                data-testid="youtube-video-embed"
+                data-testid="wistia-video-embed"
+                dangerouslySetInnerHTML={{
+                  __html: '<wistia-player media-id="y0k4nog4c3" aspect="1.7777777777777777"></wistia-player>'
+                }}
                 onLoad={() => trackVideoPlay('Hero Video - Marketing Engine Demo')}
-              ></iframe>
+              />
             </div>
           </div>
           
