@@ -32,14 +32,16 @@ export default function HeroSection() {
           {/* Embedded Wistia Video */}
           <div className="glass-card p-4 sm:p-8 rounded-3xl mb-12 max-w-4xl mx-auto">
             <div className="aspect-video rounded-xl overflow-hidden">
-              <div 
+              <iframe 
+                src="https://fast.wistia.net/embed/iframe/y0k4nog4c3?autoPlay=false&videoFoam=true" 
+                title="Wistia video player"
+                allowFullScreen
+                frameBorder="0"
+                scrolling="no"
                 className="w-full h-full"
                 data-testid="wistia-video-embed"
-                dangerouslySetInnerHTML={{
-                  __html: '<wistia-player media-id="y0k4nog4c3" aspect="1.7777777777777777"></wistia-player>'
-                }}
                 onLoad={() => trackVideoPlay('Hero Video - Marketing Engine Demo')}
-              />
+              ></iframe>
             </div>
           </div>
           
