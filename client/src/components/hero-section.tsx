@@ -122,35 +122,6 @@ export default function HeroSection() {
 
         {/* Additional Case Studies Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-          {/* Style 1 */}
-          <div className="glass-card rounded-2xl p-4 sm:p-6">
-            <div className="aspect-video rounded-xl overflow-hidden mb-4">
-              <video
-                className="w-full h-full object-cover"
-                autoPlay
-                loop
-                muted
-                playsInline
-                data-testid="video-style-1"
-                onLoadedMetadata={(e) => {
-                  const video = e.target as HTMLVideoElement;
-                  video.addEventListener('timeupdate', () => {
-                    if (video.currentTime >= 17) {
-                      video.currentTime = 0;
-                    }
-                  });
-                }}
-              >
-                <source src="/style1-demo.mp4" type="video/mp4" />
-                <source src="attached_assets/Used Car Prices (3)_1756009784803.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-
-          </div>
-
-          
-
           {/* Style 4 */}
           <div className="glass-card rounded-2xl p-4 sm:p-6">
             <div className="aspect-video rounded-xl overflow-hidden mb-4 bg-black">
