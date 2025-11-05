@@ -90,7 +90,7 @@ export default function HeroSection() {
           <div className="glass-card rounded-3xl p-6 sm:p-8 mb-8">
             <div className="flex flex-col lg:flex-row items-center gap-8">
               <div className="lg:w-1/2">
-                <div className="aspect-video rounded-xl overflow-hidden">
+                <div className="aspect-video rounded-xl overflow-hidden relative">
                   <iframe 
                     src="https://fast.wistia.net/embed/iframe/uq8p58w7cf?autoPlay=false&videoFoam=true" 
                     title="Thryft testimonial video"
@@ -100,6 +100,9 @@ export default function HeroSection() {
                     className="w-full h-full"
                     data-testid="video-thryft-hero"
                   ></iframe>
+                  <div className="absolute top-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded">
+                    (play 2x speed)
+                  </div>
                 </div>
               </div>
               <div className="lg:w-1/2 text-center lg:text-left">
