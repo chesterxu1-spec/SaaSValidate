@@ -106,9 +106,7 @@ export default function HeroSection() {
                 <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
                   Thryft
                 </h3>
-                <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                  From concept to investor ready in 4 weeks. Thryft used a product demo video to tell their story and win attention.
-                </p>
+                <p className="text-lg text-gray-600 mb-6 leading-relaxed">From 0 to 800 waitlist signups at 1.40 AUD CPL. Thryft was investor ready in 4 weeks. </p>
                 <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
                   <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">4 Weeks</span>
                   <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">Investor Ready</span>
