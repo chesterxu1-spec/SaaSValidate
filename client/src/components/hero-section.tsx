@@ -91,17 +91,15 @@ export default function HeroSection() {
             <div className="flex flex-col lg:flex-row items-center gap-8">
               <div className="lg:w-1/2">
                 <div className="aspect-video rounded-xl overflow-hidden">
-                  <video
-                    className="w-full h-full object-cover"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
+                  <iframe 
+                    src="https://fast.wistia.net/embed/iframe/uq8p58w7cf?autoPlay=false&videoFoam=true" 
+                    title="Thryft testimonial video"
+                    allowFullScreen
+                    frameBorder="0"
+                    scrolling="no"
+                    className="w-full h-full"
                     data-testid="video-thryft-hero"
-                  >
-                    <source src="/thryft-demo.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+                  ></iframe>
                 </div>
               </div>
               <div className="lg:w-1/2 text-center lg:text-left">
