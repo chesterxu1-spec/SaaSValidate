@@ -120,28 +120,6 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Additional Case Studies Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-          {/* Style 4 */}
-          <div className="glass-card rounded-2xl p-4 sm:p-6">
-            <div className="aspect-video rounded-xl overflow-hidden mb-4 bg-black">
-              <video
-                className="w-full h-full object-contain"
-                autoPlay
-                loop
-                muted
-                playsInline
-                data-testid="video-style-4"
-              >
-                <source src="/style4-demo.mp4" type="video/mp4" />
-                <source src="attached_assets/Ferocia Brand Ad copy_1756010546978.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-
-          </div>
-        </div>
-
         {/* Bottom CTA Section */}
         <div className="text-center pt-16 pb-8">
           <Button 
