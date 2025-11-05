@@ -149,43 +149,7 @@ export default function HeroSection() {
 
           </div>
 
-          {/* Style 2 */}
-          <div className="glass-card rounded-2xl p-4 sm:p-6">
-            <div className="aspect-video rounded-xl overflow-hidden mb-4">
-              <video
-                className="w-full h-full object-cover scale-110 -translate-y-2"
-                autoPlay
-                loop
-                muted
-                playsInline
-                data-testid="video-style-2"
-              >
-                <source src="/style2-demo.mp4" type="video/mp4" />
-                <source src="attached_assets/Screen Recording 2025-08-24 at 2.16.18 pm_1756010382854.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-
-          </div>
-
-          {/* Style 3 */}
-          <div className="glass-card rounded-2xl p-4 sm:p-6">
-            <div className="aspect-video rounded-xl overflow-hidden mb-4">
-              <video
-                className="w-full h-full object-cover"
-                autoPlay
-                loop
-                muted
-                playsInline
-                data-testid="video-style-3"
-              >
-                <source src="/style3-demo.mp4" type="video/mp4" />
-                <source src="attached_assets/Potoroo Motion Design copy_1756010718814.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-
-          </div>
+          
 
           {/* Style 4 */}
           <div className="glass-card rounded-2xl p-4 sm:p-6">
