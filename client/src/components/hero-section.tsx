@@ -20,8 +20,8 @@ export default function HeroSection() {
             contentEditable={true}
             suppressContentEditableWarning={true}
             data-testid="editable-main-heading"
-          ><span className="block sm:hidden">100 Users in 4 Weeks<br />with a Traction Engine</span>
-            <span className="hidden sm:block">100 Users in 4 Weeks with a <br />Traction Marketing Engine</span>
+          ><span className="block sm:hidden">$40k+ MRR in 6 Months<br />with a Traction Engine</span>
+            <span className="hidden sm:block">$40k+ MRR in 6 Months with a <br />Traction Marketing Engine</span>
           </h1>
           
           {/* Supporting Subheading - Lower Hierarchy */}
