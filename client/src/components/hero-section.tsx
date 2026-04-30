@@ -83,6 +83,29 @@ export default function HeroSection() {
           </p>
         </div>
 
+        {/* Case Study - Wellspoken */}
+        <div className="mb-16">
+          <div className="glass-card rounded-3xl p-6 sm:p-8 mb-8">
+            <div className="flex flex-col lg:flex-row items-center gap-8">
+              <div className="lg:w-1/2">
+                <div className="aspect-video rounded-xl overflow-hidden relative bg-gray-100 flex items-center justify-center">
+                  <span className="text-gray-400 text-sm">Video coming soon</span>
+                </div>
+              </div>
+              <div className="lg:w-1/2 text-center lg:text-left">
+                <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+                  Wellspoken
+                </h3>
+                <p className="text-lg text-gray-600 mb-6 leading-relaxed">From $0 MRR to $40k MRR in 6 months. Wellspoken made over $55k in profit.</p>
+                <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
+                  <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">6 months</span>
+                  <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">Blitz Growth</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Hero Case Study - Thryft */}
         <div className="mb-16">
           <div className="glass-card rounded-3xl p-6 sm:p-8 mb-8">
