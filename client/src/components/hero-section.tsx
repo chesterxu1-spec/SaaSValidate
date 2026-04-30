@@ -78,7 +78,7 @@ export default function HeroSection() {
         {/* Traction Marketing Engine Diagram */}
         <div className="max-w-5xl mx-auto px-3 sm:px-0 pb-20">
           <div className="text-center mb-10">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">Traction Marketing Engine</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">How We Get You To $40k+ MRR</h2>
           </div>
           <div className="glass-card rounded-3xl p-6 sm:p-10">
             <div className="flex flex-col lg:flex-row items-start justify-center gap-4 lg:gap-0">
