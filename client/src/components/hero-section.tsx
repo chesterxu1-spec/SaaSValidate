@@ -25,9 +25,7 @@ export default function HeroSection() {
           </h1>
           
           {/* Supporting Subheading - Lower Hierarchy */}
-          <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">
-            Watch how I help SaaS founders drive traction, build a user base, and attract investors all within 4 weeks of implementing a marketing engine built for early stage startups.
-          </p>
+          <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">Watch the system that helps app founders build a user base, compound growth and grow 40k+ MRR in 6 months of implementing a marketing engine build for early stage B2C apps.</p>
           
           {/* Embedded Wistia Video */}
           <div className="glass-card p-4 sm:p-8 rounded-3xl mb-12 max-w-4xl mx-auto">
