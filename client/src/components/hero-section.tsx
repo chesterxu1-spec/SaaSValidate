@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { trackBookCall, trackVideoPlay } from "@/lib/analytics";
+import wellspokenImg from "@assets/Screen_Shot_2026-04-30_at_1.15.58_pm_1777518963702.png";
 
 export default function HeroSection() {
   return (
@@ -88,8 +89,8 @@ export default function HeroSection() {
           <div className="glass-card rounded-3xl p-6 sm:p-8 mb-8">
             <div className="flex flex-col lg:flex-row items-center gap-8">
               <div className="lg:w-1/2">
-                <div className="aspect-video rounded-xl overflow-hidden relative bg-gray-100 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Video coming soon</span>
+                <div className="aspect-video rounded-xl overflow-hidden relative">
+                  <img src={wellspokenImg} alt="Wellspoken testimonial" className="w-full h-full object-cover" />
                 </div>
               </div>
               <div className="lg:w-1/2 text-center lg:text-left">
