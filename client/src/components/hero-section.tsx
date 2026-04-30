@@ -1,6 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { trackBookCall, trackVideoPlay } from "@/lib/analytics";
 import wellspokenImg from "@assets/Screen_Shot_2026-04-30_at_1.15.58_pm_1777518963702.png";
+import logo10xDental from "@assets/10xDental_Logo_copy_1777519466762.png";
+import logoSB from "@assets/Artboard_1_copy_2_1777519466762.png";
+import logoSteps from "@assets/Artboard_1_1_copy_1777519466763.png";
+import logoVend from "@assets/Artboard_1_1777519466763.png";
+import logoBird from "@assets/Artboard_7_copy_1777519466763.png";
+import logoCheck from "@assets/Artboard_25_copy_1777519466763.png";
+import logoV from "@assets/Screen_Shot_2026-01-02_at_11.26.59_am_1777519466764.png";
+import logoMusic from "@assets/Screen_Shot_2026-02-03_at_10.42.50_pm_1777519466764.png";
+import logoWellspoken from "@assets/Wellspoken_Logo_copy_1777519466764.png";
+import logoZerberus from "@assets/Zerberus_Logo_copy_1777519466764.png";
+
+const logos = [
+  logo10xDental, logoSB, logoSteps, logoVend, logoBird,
+  logoCheck, logoV, logoMusic, logoWellspoken, logoZerberus,
+];
 
 export default function HeroSection() {
   return (
@@ -73,6 +88,27 @@ export default function HeroSection() {
           >
             👉 Book Your Marketing Engine
           </Button>
+        </div>
+
+        {/* Logo Carousel */}
+        <div className="max-w-5xl mx-auto px-3 sm:px-0 pb-12 overflow-hidden relative">
+          <p className="text-center text-sm text-gray-400 mb-6 tracking-widest uppercase font-medium">Trusted by founders from</p>
+          <div className="relative">
+            {/* Fade left */}
+            <div className="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none" style={{background: 'linear-gradient(to right, white, transparent)'}}></div>
+            {/* Fade right */}
+            <div className="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none" style={{background: 'linear-gradient(to left, white, transparent)'}}></div>
+            <div
+              className="flex gap-4"
+              style={{ animation: 'logoScroll 22s linear infinite', width: 'max-content' }}
+            >
+              {[...logos, ...logos].map((src, i) => (
+                <div key={i} className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden flex-shrink-0 bg-gray-50 border border-gray-100">
+                  <img src={src} alt="client logo" className="w-full h-full object-cover" />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Traction Marketing Engine Diagram */}
