@@ -74,6 +74,66 @@ export default function HeroSection() {
             👉 Book Your Marketing Engine
           </Button>
         </div>
+
+        {/* Traction Marketing Engine Diagram */}
+        <div className="max-w-5xl mx-auto px-3 sm:px-0 pb-20">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">Traction Marketing Engine</h2>
+          </div>
+          <div className="glass-card rounded-3xl p-6 sm:p-10">
+            <div className="flex flex-col lg:flex-row items-start justify-center gap-4 lg:gap-0">
+
+              {/* Step 1 - Paid Acquisition */}
+              <div className="flex-1 flex flex-col items-center text-center px-4">
+                <div className="w-full bg-gray-900 text-white rounded-2xl px-5 py-3 mb-4">
+                  <span className="font-bold text-base sm:text-lg">Paid Acquisition</span>
+                </div>
+                <ul className="text-sm text-gray-600 space-y-2 text-left w-full">
+                  <li className="flex items-start gap-2"><span className="text-gray-400 mt-0.5">·</span>Reliable and aggressive growth</li>
+                  <li className="flex items-start gap-2"><span className="text-gray-400 mt-0.5">·</span>Boosts ASO</li>
+                  <li className="flex items-start gap-2"><span className="text-gray-400 mt-0.5">·</span>Allows for rapid testing of audiences, angles and ads</li>
+                </ul>
+              </div>
+
+              {/* Arrow */}
+              <div className="flex lg:flex-col items-center justify-center px-2 py-4 lg:py-0 lg:mt-4">
+                <svg className="w-8 h-8 text-gray-400 rotate-90 lg:rotate-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </div>
+
+              {/* Step 2 - ASO Acquisition */}
+              <div className="flex-1 flex flex-col items-center text-center px-4">
+                <div className="w-full bg-gray-600 text-white rounded-2xl px-5 py-3 mb-4">
+                  <span className="font-bold text-base sm:text-lg">ASO Acquisition</span>
+                </div>
+                <ul className="text-sm text-gray-600 space-y-2 text-left w-full">
+                  <li className="flex items-start gap-2"><span className="text-gray-400 mt-0.5">·</span>ASO increases conversions</li>
+                  <li className="flex items-start gap-2"><span className="text-gray-400 mt-0.5">·</span>Source of cheap reliable users</li>
+                </ul>
+              </div>
+
+              {/* Arrow */}
+              <div className="flex lg:flex-col items-center justify-center px-2 py-4 lg:py-0 lg:mt-4">
+                <svg className="w-8 h-8 text-gray-400 rotate-90 lg:rotate-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </div>
+
+              {/* Step 3 - Full Funnel Consulting */}
+              <div className="flex-1 flex flex-col items-center text-center px-4">
+                <div className="w-full bg-gray-400 text-white rounded-2xl px-5 py-3 mb-4">
+                  <span className="font-bold text-base sm:text-lg">Full Funnel Consulting</span>
+                </div>
+                <ul className="text-sm text-gray-600 space-y-2 text-left w-full">
+                  <li className="flex items-start gap-2"><span className="text-gray-400 mt-0.5">·</span>Allows us to identify bottlenecks and fix the REAL issue</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
       </div>
       {/* Case Studies Section */}
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pb-[80px] sm:pb-[120px]">
