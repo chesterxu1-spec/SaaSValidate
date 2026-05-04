@@ -20,13 +20,15 @@ export default function Precall() {
 
         {/* Video Placeholder */}
         <div className="glass-card p-4 sm:p-8 rounded-3xl">
-          <div className="aspect-video rounded-2xl overflow-hidden bg-gray-200 flex flex-col items-center justify-center gap-4">
-            <div className="w-16 h-16 rounded-full bg-gray-400/30 flex items-center justify-center">
-              <svg className="w-8 h-8 text-gray-500 ml-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </div>
-            <p className="text-gray-500 text-sm font-medium">Video coming soon</p>
+          <div className="aspect-video rounded-2xl overflow-hidden">
+            <iframe
+              src="https://fast.wistia.net/embed/iframe/ufy8sam9yo?autoPlay=false&videoFoam=true"
+              title="Pre-call video"
+              allowFullScreen
+              frameBorder="0"
+              scrolling="no"
+              className="w-full h-full"
+            ></iframe>
           </div>
         </div>
 
