@@ -22,7 +22,7 @@ export default function Precall() {
         <div className="glass-card p-4 sm:p-8 rounded-3xl">
           <div className="aspect-video rounded-2xl overflow-hidden">
             <iframe
-              src="https://fast.wistia.net/embed/iframe/ufy8sam9yo?autoPlay=false&videoFoam=true"
+              src="https://fast.wistia.net/embed/iframe/q2q6v5rhck?autoPlay=false&videoFoam=true"
               title="Pre-call video"
               allowFullScreen
               frameBorder="0"
