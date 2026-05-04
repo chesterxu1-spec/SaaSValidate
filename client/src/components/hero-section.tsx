@@ -47,7 +47,7 @@ export default function HeroSection() {
           <div className="glass-card p-4 sm:p-8 rounded-3xl mb-12 max-w-4xl mx-auto">
             <div className="aspect-video rounded-xl overflow-hidden">
               <iframe 
-                src="https://fast.wistia.net/embed/iframe/6gotnplpax?autoPlay=false&videoFoam=true" 
+                src="https://fast.wistia.net/embed/iframe/ufy8sam9yo?autoPlay=false&videoFoam=true" 
                 title="Wistia video player"
                 allowFullScreen
                 frameBorder="0"
