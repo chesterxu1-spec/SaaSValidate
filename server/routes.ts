@@ -20,14 +20,14 @@ const createEmailTransporter = () => {
 };
 
 export async function registerRoutes(app: Express): Promise<Server> {
-  // Serve landing-b.html at /ugccontentmachine
-  app.get("/ugccontentmachine", (req, res) => {
-    const filePath = path.resolve(
-      process.env.NODE_ENV === "production"
-        ? "dist/public/landing-b.html"
-        : "client/public/landing-b.html"
-    );
-    res.sendFile(filePath);
+  // Serve landing-b.html at /ugccontentmachine (production only; dev is handled by Vite + React Router)
+  app.get("/ugccontentmachine", (req, res, next) => {
+    if (process.env.NODE_ENV === "production") {
+      const filePath = path.resolve("dist/public/index.html");
+      res.sendFile(filePath);
+    } else {
+      next();
+    }
   });
 
   // Contact inquiry routes
