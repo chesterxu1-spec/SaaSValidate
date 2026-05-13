@@ -186,9 +186,10 @@ export default function UGCLanding() {
           </div>
           <div className="glass-card p-2 rounded-3xl">
             <iframe
-              src="https://api.leadconnectorhq.com/widget/booking/VjrfycqGgbRgP2RnHUq5"
-              style={{width: '100%', border: 'none', height: '800px'}}
-              scrolling="yes"
+              src="https://api.leadconnectorhq.com/widget/booking/9TAigOGvWvzQOVjXWSKe"
+              style={{width: '100%', border: 'none', overflow: 'hidden'}}
+              scrolling="no"
+              id="9TAigOGvWvzQOVjXWSKe_1778669683974"
             ></iframe>
           </div>
         </div>
