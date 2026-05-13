@@ -3,6 +3,7 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactInquirySchema } from "@shared/schema";
 import { z } from "zod";
+import path from "path";
 import nodemailer from "nodemailer";
 
 // Create email transporter
@@ -19,6 +20,16 @@ const createEmailTransporter = () => {
 };
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Serve landing-b.html at /ugccontentmachine
+  app.get("/ugccontentmachine", (req, res) => {
+    const filePath = path.resolve(
+      process.env.NODE_ENV === "production"
+        ? "dist/public/landing-b.html"
+        : "client/public/landing-b.html"
+    );
+    res.sendFile(filePath);
+  });
+
   // Contact inquiry routes
   app.post("/api/contact", async (req, res) => {
     try {

@@ -18,6 +18,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/precall" component={Precall} />
+      <Route path="/ugccontentmachine" component={Home} />
       <Route component={NotFound} />
     </Switch>
   );

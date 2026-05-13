@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Movemore - SaaS startup validation</title>
+    <meta name="description" content="Professional SaaS validation services for startups. Get $9,000+ value with our $3,000 comprehensive validation package including demo videos, landing pages, and targeted ads." />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: https:; connect-src 'self' https://connect.facebook.net https://www.facebook.com https://*.facebook.com https://*.facebook.net wss: ws:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://connect.facebook.net https://www.facebook.com https://replit.com; img-src 'self' data: https: https://www.facebook.com; frame-ancestors 'self' https://*.facebook.com https://business.facebook.com https://www.facebook.com;">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Movemore - SaaS startup validation" />
+    <meta property="og:description" content="Professional SaaS validation services for startups. Get $9,000+ value with our $3,000 comprehensive validation package." />
+    <meta property="og:image" content="/movemore-logo.png" />
+    <meta property="og:url" content="https://movemore.replit.app" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Movemore - SaaS startup validation" />
+    <meta name="twitter:description" content="Professional SaaS validation services for startups. Get $9,000+ value with our $3,000 comprehensive validation package." />
+    <meta name="twitter:image" content="/movemore-logo.png" />
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    // Global error handler to suppress Meta Pixel fetch errors
+    window.addEventListener('unhandledrejection', function(event) {
+      // Check if error is related to Meta Pixel/Facebook Connect
+      if (event.reason && event.reason.message && 
+          (event.reason.message.includes('Failed to fetch') || 
+           event.reason.message.includes('NetworkError')) &&
+          event.reason.stack && 
+          (event.reason.stack.includes('connect.facebook.net') ||
+           event.reason.stack.includes('facebook.com'))) {
+        console.warn('Meta Pixel network request blocked (likely by browser/extension) - suppressing error');
+        event.preventDefault();
+      }
+    });
+
+    // Enhanced Meta Pixel with error handling
+    (function() {
+      try {
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;
+        
+        // Add error handling for script loading
+        t.onerror = function() {
+          console.warn('Meta Pixel script failed to load from connect.facebook.net');
+          // Create a minimal fallback fbq function
+          window.fbq = function() {
+            console.log('Meta Pixel fallback - tracking:', arguments[0], arguments[1]);
+          };
+        };
+        
+        s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        
+        // Initialize pixel with basic config after a short delay
+        setTimeout(function() {
+          if (typeof window.fbq === 'function') {
+            fbq('init', '24014073838202987', {
+              external_id: 'movemore_pixel'
+            });
+            fbq('track', 'PageView');
+          }
+        }, 100);
+        
+      } catch (error) {
+        console.warn('Meta Pixel initialization error:', error);
+        // Fallback function for tracking
+        window.fbq = function() {
+          console.log('Meta Pixel fallback - tracking:', arguments[0], arguments[1]);
+        };
+      }
+    })();
+    </script>
+    <!-- End Meta Pixel Code -->
+    
+    <link rel="icon" type="image/png" href="/movemore-logo.png">
+    <link rel="apple-touch-icon" href="/movemore-logo.png">
+    <link rel="mask-icon" href="/movemore-logo.png" color="#000000">
+    
+    <!-- Calendar Widget Script -->
+    <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+    
+    <!-- Wistia Video Scripts -->
+    <script src="https://fast.wistia.com/embed/medias/ufy8sam9yo.jsonp" async></script>
+    <script src="https://fast.wistia.com/embed/medias/uq8p58w7cf.jsonp" async></script>
+  </head>
+  <body>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=24014073838202987&ev=PageView&noscript=1"
+    /></noscript>
+    
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
+    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
+  </body>
+</html>
