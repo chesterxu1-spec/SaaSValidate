@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 import Precall from "@/pages/precall";
+import UGCLanding from "@/pages/ugc-landing";
 import { useEffect } from "react";
 import { initGA } from "./lib/analytics";
 import { useAnalytics } from "./hooks/use-analytics";
@@ -18,7 +19,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/precall" component={Precall} />
-      <Route path="/ugccontentmachine" component={Home} />
+      <Route path="/ugccontentmachine" component={UGCLanding} />
       <Route component={NotFound} />
     </Switch>
   );
