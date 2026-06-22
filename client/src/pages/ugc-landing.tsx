@@ -35,7 +35,6 @@ export default function UGCLanding() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       <Navigation />
-
       {/* Hero Section */}
       <section className="px-3 sm:px-6 lg:px-8 pt-[100px] sm:pt-[120px] pb-[80px] sm:pb-[120px]">
         <div className="max-w-5xl mx-auto">
@@ -56,9 +55,7 @@ export default function UGCLanding() {
             </h1>
 
             {/* Subheadline */}
-            <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">
-              Watch the system we use to help app founders generate 100+ Million views, build a user base and grow to 10k+ MRR in 3 months of implementing the UGC Content Machine built for early stage apps.
-            </p>
+            <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">Watch the system we use to help app founders generate 10+ Million views, build a user base and grow to 80k+ MRR in 3 months of implementing the UGC Content Machine built for early stage apps.</p>
 
             {/* Embedded Wistia Video */}
             <div className="glass-card p-4 sm:p-8 rounded-3xl mb-12 max-w-4xl mx-auto">
@@ -176,7 +173,6 @@ export default function UGCLanding() {
           </div>
         </div>
       </section>
-
       {/* Calendar Section */}
       <section id="calendar" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
