@@ -61,11 +61,10 @@ export default function UGCLanding() {
             <div className="glass-card p-4 sm:p-8 rounded-3xl mb-12 max-w-4xl mx-auto">
               <div className="aspect-video rounded-xl overflow-hidden">
                 <iframe
-                  src="https://fast.wistia.net/embed/iframe/ufy8sam9yo?autoPlay=false&videoFoam=true"
+                  src="https://www.loom.com/embed/80cbdd217eb4479ab18d2aab6c18f283"
                   title="UGC Content Machine video"
                   allowFullScreen
                   frameBorder="0"
-                  scrolling="no"
                   className="w-full h-full"
                   onLoad={() => trackVideoPlay('UGC Landing - Content Machine Demo')}
                 ></iframe>
