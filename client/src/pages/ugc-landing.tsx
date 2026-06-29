@@ -129,6 +129,28 @@ export default function UGCLanding() {
             </div>
           </div>
 
+          {/* Revise */}
+          <div className="mb-16">
+            <div className="glass-card rounded-3xl p-6 sm:p-8 mb-8">
+              <div className="flex flex-col lg:flex-row items-center gap-8">
+                <div className="lg:w-1/2">
+                  <div className="aspect-video rounded-xl overflow-hidden relative">
+                    <img src="/elman-testimonial.png" alt="Revise testimonial" className="w-full h-full object-cover" />
+                  </div>
+                </div>
+                <div className="lg:w-1/2 text-center lg:text-left">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Revise</h3>
+                  <p className="text-lg text-gray-600 mb-6 leading-relaxed">From 0 anything to 250k Views and 177 Subscribers in 6 Months.</p>
+                  <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
+                    <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">6 Months</span>
+                    <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">250k Views</span>
+                    <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">177 Subscribers</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Thryft */}
           <div className="mb-16">
             <div className="glass-card rounded-3xl p-6 sm:p-8 mb-8">
@@ -154,28 +176,6 @@ export default function UGCLanding() {
                   <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
                     <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">4 Weeks</span>
                     <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">Investor Ready</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Elman */}
-          <div className="mb-16">
-            <div className="glass-card rounded-3xl p-6 sm:p-8 mb-8">
-              <div className="flex flex-col lg:flex-row items-center gap-8">
-                <div className="lg:w-1/2">
-                  <div className="aspect-video rounded-xl overflow-hidden relative">
-                    <img src="/elman-testimonial.png" alt="Elman Mansimov testimonial" className="w-full h-full object-cover" />
-                  </div>
-                </div>
-                <div className="lg:w-1/2 text-center lg:text-left">
-                  <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Elman Mansimov</h3>
-                  <p className="text-lg text-gray-600 mb-6 leading-relaxed">From 0 anything to 250k Views and 177 Subscribers in 6 Months.</p>
-                  <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
-                    <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">6 Months</span>
-                    <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">250k Views</span>
-                    <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">177 Subscribers</span>
                   </div>
                 </div>
               </div>
