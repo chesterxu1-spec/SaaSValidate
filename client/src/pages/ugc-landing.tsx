@@ -50,12 +50,12 @@ export default function UGCLanding() {
 
             {/* Main Heading */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-6 sm:mb-8 tracking-tight leading-tight lg:leading-[1.1] px-2 sm:px-0 pb-2 relative overflow-hidden shine-text">
-              <span className="block sm:hidden">$80k+ MRR in 3 months<br />with a UGC Content Machine</span>
-              <span className="hidden sm:block">$80k+ MRR in 3 months with a<br />UGC Content Machine</span>
+              <span className="block sm:hidden">$40k+ MRR in 6 Months<br />with a UGC Content Machine</span>
+              <span className="hidden sm:block">$40k+ MRR in 6 Months with a<br />UGC Content Machine</span>
             </h1>
 
             {/* Subheadline */}
-            <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">Watch the system we use to help app founders generate 10+ Million views, build a user base and grow to 80k+ MRR in 3 months of implementing the UGC Content Machine built for early stage apps.</p>
+            <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">Watch the system we use to help app founders generate 100+ Million views, build a user base and grow to $40k+ MRR in 6 months of implementing the UGC Content Machine built for early stage apps.</p>
 
             {/* Embedded Wistia Video */}
             <div className="glass-card p-4 sm:p-8 rounded-3xl mb-12 max-w-4xl mx-auto">
@@ -102,7 +102,7 @@ export default function UGCLanding() {
         {/* Case Studies Section */}
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pb-[80px] sm:pb-[120px]">
           <div className="text-center mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">Testimonial</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">Testimonials</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               See how we've helped app founders build traction and grow MRR
             </p>
@@ -154,6 +154,28 @@ export default function UGCLanding() {
                   <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
                     <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">4 Weeks</span>
                     <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">Investor Ready</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Elman */}
+          <div className="mb-16">
+            <div className="glass-card rounded-3xl p-6 sm:p-8 mb-8">
+              <div className="flex flex-col lg:flex-row items-center gap-8">
+                <div className="lg:w-1/2">
+                  <div className="aspect-video rounded-xl overflow-hidden relative">
+                    <img src="/elman-testimonial.png" alt="Elman Mansimov testimonial" className="w-full h-full object-cover" />
+                  </div>
+                </div>
+                <div className="lg:w-1/2 text-center lg:text-left">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Elman Mansimov</h3>
+                  <p className="text-lg text-gray-600 mb-6 leading-relaxed">From 0 anything to 250k Views and 177 Subscribers in 6 Months.</p>
+                  <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
+                    <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">6 Months</span>
+                    <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">250k Views</span>
+                    <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">177 Subscribers</span>
                   </div>
                 </div>
               </div>
