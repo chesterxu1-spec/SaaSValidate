@@ -91,7 +91,7 @@ export default function UGCLanding() {
             <Button
               onClick={() => { trackBookCall(); trackLead(); scrollToCalendar(); }}
               size="lg"
-              className="bg-gray-900 text-white px-8 sm:px-12 py-4 sm:py-6 rounded-xl font-semibold hover:bg-gray-800 transition-all transform hover:scale-105 text-lg sm:text-xl"
+              className="bg-gray-900 text-white px-6 sm:px-12 py-4 sm:py-6 rounded-xl font-semibold hover:bg-gray-800 transition-all transform hover:scale-105 text-base sm:text-xl whitespace-normal h-auto max-w-[90vw] sm:max-w-none"
             >
               👉 Book Your UGC Content Machine
             </Button>
@@ -102,8 +102,8 @@ export default function UGCLanding() {
         {/* Scrolling Video Strip */}
         <div className="w-full overflow-hidden py-10 sm:py-14" ref={videoStripRef}>
           <div className="relative">
-            <div className="absolute left-0 top-0 bottom-0 w-24 sm:w-48 z-10 pointer-events-none" style={{background: 'linear-gradient(to right, #f3f4f6, transparent)'}}></div>
-            <div className="absolute right-0 top-0 bottom-0 w-24 sm:w-48 z-10 pointer-events-none" style={{background: 'linear-gradient(to left, #f3f4f6, transparent)'}}></div>
+            <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-48 z-10 pointer-events-none" style={{background: 'linear-gradient(to right, #f3f4f6, transparent)'}}></div>
+            <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-48 z-10 pointer-events-none" style={{background: 'linear-gradient(to left, #f3f4f6, transparent)'}}></div>
             <div className="flex gap-5 px-6" style={{animation: 'ugcVideoScroll 70s linear infinite', width: 'max-content'}}>
               {[...ugcVideos, ...ugcVideos].map((src, i) => (
                 <div key={i} className="flex-shrink-0 relative rounded-2xl overflow-hidden shadow-xl" style={{width: '200px', height: '356px'}}>
