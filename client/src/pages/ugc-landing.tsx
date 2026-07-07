@@ -121,12 +121,12 @@ export default function UGCLanding() {
         </div>
 
         {/* Logo Carousel */}
-        <div className="max-w-5xl mx-auto px-3 sm:px-0 pb-12 overflow-hidden relative">
+        <div className="w-full pb-12">
           <p className="text-center text-sm text-gray-400 mb-6 tracking-widest uppercase font-medium">Trusted by founders from</p>
-          <div className="relative">
-            <div className="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none" style={{background: 'linear-gradient(to right, #f3f4f6, transparent)'}}></div>
-            <div className="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none" style={{background: 'linear-gradient(to left, #f3f4f6, transparent)'}}></div>
-            <div className="flex gap-4" style={{ animation: 'logoScroll 22s linear infinite', width: 'max-content' }}>
+          <div className="relative overflow-hidden">
+            <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-24 z-10 pointer-events-none" style={{background: 'linear-gradient(to right, #f3f4f6, transparent)'}}></div>
+            <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-24 z-10 pointer-events-none" style={{background: 'linear-gradient(to left, #f3f4f6, transparent)'}}></div>
+            <div className="flex gap-4 px-2" style={{ animation: 'logoScroll 22s linear infinite', width: 'max-content' }}>
               {[...logos, ...logos].map((src, i) => (
                 <div key={i} className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden flex-shrink-0 bg-gray-50 border border-gray-100">
                   <img src={src} alt="client logo" className="w-full h-full object-cover" />
@@ -236,11 +236,11 @@ export default function UGCLanding() {
           </div>
 
           {/* Bottom CTA */}
-          <div className="text-center pt-16 pb-8">
+          <div className="text-center pt-16 pb-8 px-4">
             <Button
               onClick={() => { trackLead(); scrollToCalendar(); }}
               size="lg"
-              className="bg-gray-900 text-white px-12 sm:px-16 py-6 sm:py-8 rounded-2xl font-bold hover:bg-gray-800 transition-all transform hover:scale-105 text-xl sm:text-2xl shine-button"
+              className="bg-gray-900 text-white px-8 sm:px-16 py-5 sm:py-8 rounded-2xl font-bold hover:bg-gray-800 transition-all transform hover:scale-105 text-lg sm:text-2xl shine-button whitespace-normal h-auto w-full sm:w-auto max-w-sm sm:max-w-none"
             >
               👉 Book Your UGC Content Machine
             </Button>
