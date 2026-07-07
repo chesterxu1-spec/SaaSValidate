@@ -20,13 +20,13 @@ const logos = [
 ];
 
 const ugcVideos = [
-  { src: '', views: '13.1M', label: 'UGC Video 1' },
-  { src: '', views: '5M', label: 'UGC Video 2' },
-  { src: '', views: '12.6M', label: 'UGC Video 3' },
-  { src: '', views: '6M', label: 'UGC Video 4' },
-  { src: '', views: '8.2M', label: 'UGC Video 5' },
-  { src: '', views: '3.4M', label: 'UGC Video 6' },
-  { src: '', views: '9.7M', label: 'UGC Video 7' },
+  'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/Tuneloom-%5BB3-C7-V1%5D-t_NEW-fo_VID-au_NewMoms25-34-an_Sleep-ad_ORGANICUGC-aw_PROBLEM%20AWARE-fe_N-A-d_15-04-2026%20copy%20%281%29%20%281%29.mp4',
+  'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/Synopsis-%5BB2-C6-V1%5D-t_NEW-fo_VID-au_WeightLoss-an_WeightLossJourney-ad_GREENSCREEN-aw_SOLUTION%20AWARE-fo_Mash-ups-d_22-06-2026%20copy%20%281%29.mp4',
+  'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/19-02-26%20Revise%20Adset%2018%20v1%20copy%20%281%29.mp4',
+  'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/Virlo%20Vid%204v1%20Sub%20copy.mp4',
+  'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/Synopsis-%5BB2-C7-V1%5D-t_NEW-fo_VID-au_WeightLoss-an_WeightLossJourney-ad_GREENSCREEN-aw_SOLUTION%20AWARE-fo_Trend-d_22-06-2026%20copy.mp4',
+  'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/13-02-26%20Virlo%20Adset%2016%20copy.mp4',
+  'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/03-02-26%20Wellspoken%20Adset%2028%20copy%20(1).mp4',
 ];
 
 const scrollToCalendar = () => {
@@ -97,54 +97,39 @@ export default function UGCLanding() {
             </Button>
           </div>
 
-          {/* Logo Carousel */}
-          <div className="max-w-5xl mx-auto px-3 sm:px-0 pb-12 overflow-hidden relative">
-            <p className="text-center text-sm text-gray-400 mb-6 tracking-widest uppercase font-medium">Trusted by founders from</p>
-            <div className="relative">
-              <div className="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none" style={{background: 'linear-gradient(to right, white, transparent)'}}></div>
-              <div className="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none" style={{background: 'linear-gradient(to left, white, transparent)'}}></div>
-              <div className="flex gap-4" style={{ animation: 'logoScroll 22s linear infinite', width: 'max-content' }}>
-                {[...logos, ...logos].map((src, i) => (
-                  <div key={i} className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden flex-shrink-0 bg-gray-50 border border-gray-100">
-                    <img src={src} alt="client logo" className="w-full h-full object-cover" />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
         </div>
 
         {/* Scrolling Video Strip */}
         <div className="w-full overflow-hidden py-10 sm:py-14" ref={videoStripRef}>
           <div className="relative">
-            <div className="absolute left-0 top-0 bottom-0 w-24 sm:w-40 z-10 pointer-events-none" style={{background: 'linear-gradient(to right, #f3f4f6, transparent)'}}></div>
-            <div className="absolute right-0 top-0 bottom-0 w-24 sm:w-40 z-10 pointer-events-none" style={{background: 'linear-gradient(to left, #f3f4f6, transparent)'}}></div>
-            <div className="flex gap-4 px-4" style={{animation: 'ugcVideoScroll 40s linear infinite', width: 'max-content'}}>
-              {[...ugcVideos, ...ugcVideos].map((v, i) => (
-                <div key={i} className="flex-shrink-0 relative rounded-2xl overflow-hidden shadow-lg" style={{width: '170px', height: '302px'}}>
-                  {v.src ? (
-                    <video
-                      className="w-full h-full object-cover"
-                      src={v.src}
-                      muted
-                      loop
-                      playsInline
-                    />
-                  ) : (
-                    <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900">
-                      <div className="w-14 h-14 rounded-full bg-white/10 border border-white/20 flex items-center justify-center mb-3">
-                        <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M8 5v14l11-7z"/>
-                        </svg>
-                      </div>
-                      <p className="text-gray-500 text-xs text-center px-4">{v.label}</p>
-                    </div>
-                  )}
-                  <div className="absolute bottom-3 left-3 bg-black/70 text-white text-xs px-2 py-0.5 rounded-full flex items-center gap-1">
-                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                    {v.views}
-                  </div>
+            <div className="absolute left-0 top-0 bottom-0 w-24 sm:w-48 z-10 pointer-events-none" style={{background: 'linear-gradient(to right, #f3f4f6, transparent)'}}></div>
+            <div className="absolute right-0 top-0 bottom-0 w-24 sm:w-48 z-10 pointer-events-none" style={{background: 'linear-gradient(to left, #f3f4f6, transparent)'}}></div>
+            <div className="flex gap-5 px-6" style={{animation: 'ugcVideoScroll 70s linear infinite', width: 'max-content'}}>
+              {[...ugcVideos, ...ugcVideos].map((src, i) => (
+                <div key={i} className="flex-shrink-0 relative rounded-2xl overflow-hidden shadow-xl" style={{width: '200px', height: '356px'}}>
+                  <video
+                    className="w-full h-full object-cover"
+                    src={src}
+                    muted
+                    loop
+                    playsInline
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Logo Carousel */}
+        <div className="max-w-5xl mx-auto px-3 sm:px-0 pb-12 overflow-hidden relative">
+          <p className="text-center text-sm text-gray-400 mb-6 tracking-widest uppercase font-medium">Trusted by founders from</p>
+          <div className="relative">
+            <div className="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none" style={{background: 'linear-gradient(to right, #f3f4f6, transparent)'}}></div>
+            <div className="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none" style={{background: 'linear-gradient(to left, #f3f4f6, transparent)'}}></div>
+            <div className="flex gap-4" style={{ animation: 'logoScroll 22s linear infinite', width: 'max-content' }}>
+              {[...logos, ...logos].map((src, i) => (
+                <div key={i} className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden flex-shrink-0 bg-gray-50 border border-gray-100">
+                  <img src={src} alt="client logo" className="w-full h-full object-cover" />
                 </div>
               ))}
             </div>
