@@ -28,6 +28,7 @@ const ugcVideos = [
   'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/13-02-26%20Virlo%20Adset%2016%20copy.mp4',
   'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/03-02-26%20Wellspoken%20Adset%2028%20copy%20%281%29.mp4',
   'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/Byrdseye-%5BB3-C10-V2%5D-t_NEW-fo_VID-au_45%20Affluent-an_INHERITANCE-ad_BEFOREANDAFTER-aw_PROBLEM%20AWARE-f_-d_17-06-2026.mp4',
+  'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/Synopsis-%5BB2-C6-V1%5D-t_NEW-fo_VID-au_WeightLoss-an_WeightLossJourney-ad_GREENSCREEN-aw_SOLUTION%20AWARE-fo_Mash-ups-d_22-06-2026%20copy%20%282%29.mp4',
 ];
 
 const scrollToCalendar = () => {
