@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import Navigation from "@/components/navigation";
 import { Button } from "@/components/ui/button";
 import { trackBookCall, trackVideoPlay } from "@/lib/analytics";
@@ -18,6 +19,16 @@ const logos = [
   logoCheck, logoV, logoMusic, logoWellspoken, logoZerberus,
 ];
 
+const ugcVideos = [
+  { src: '', views: '13.1M', label: 'UGC Video 1' },
+  { src: '', views: '5M', label: 'UGC Video 2' },
+  { src: '', views: '12.6M', label: 'UGC Video 3' },
+  { src: '', views: '6M', label: 'UGC Video 4' },
+  { src: '', views: '8.2M', label: 'UGC Video 5' },
+  { src: '', views: '3.4M', label: 'UGC Video 6' },
+  { src: '', views: '9.7M', label: 'UGC Video 7' },
+];
+
 const scrollToCalendar = () => {
   const el = document.getElementById('calendar');
   if (el) el.scrollIntoView({ behavior: 'smooth' });
@@ -32,6 +43,25 @@ const trackLead = () => {
 };
 
 export default function UGCLanding() {
+  const videoStripRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const videos = videoStripRef.current?.querySelectorAll('video');
+    if (!videos || videos.length === 0) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          const video = entry.target as HTMLVideoElement;
+          if (entry.isIntersecting) { video.play().catch(() => {}); }
+          else { video.pause(); }
+        });
+      },
+      { threshold: 0.3 }
+    );
+    videos.forEach(v => observer.observe(v));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       <Navigation />
@@ -56,20 +86,6 @@ export default function UGCLanding() {
 
             {/* Subheadline */}
             <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">Watch the system we use to help app founders generate 100+ Million views, build a user base and grow to $40k+ MRR in 6 months of implementing the UGC Content Machine built for early stage apps.</p>
-
-            {/* Embedded Wistia Video */}
-            <div className="glass-card p-4 sm:p-8 rounded-3xl mb-12 max-w-4xl mx-auto">
-              <div className="aspect-video rounded-xl overflow-hidden">
-                <iframe
-                  src="https://www.loom.com/embed/80cbdd217eb4479ab18d2aab6c18f283"
-                  title="UGC Content Machine video"
-                  allowFullScreen
-                  frameBorder="0"
-                  className="w-full h-full"
-                  onLoad={() => trackVideoPlay('UGC Landing - Content Machine Demo')}
-                ></iframe>
-              </div>
-            </div>
 
             {/* CTA Button */}
             <Button
@@ -97,6 +113,58 @@ export default function UGCLanding() {
             </div>
           </div>
 
+        </div>
+
+        {/* Scrolling Video Strip */}
+        <div className="w-full overflow-hidden py-10 sm:py-14" ref={videoStripRef}>
+          <div className="relative">
+            <div className="absolute left-0 top-0 bottom-0 w-24 sm:w-40 z-10 pointer-events-none" style={{background: 'linear-gradient(to right, #f3f4f6, transparent)'}}></div>
+            <div className="absolute right-0 top-0 bottom-0 w-24 sm:w-40 z-10 pointer-events-none" style={{background: 'linear-gradient(to left, #f3f4f6, transparent)'}}></div>
+            <div className="flex gap-4 px-4" style={{animation: 'ugcVideoScroll 40s linear infinite', width: 'max-content'}}>
+              {[...ugcVideos, ...ugcVideos].map((v, i) => (
+                <div key={i} className="flex-shrink-0 relative rounded-2xl overflow-hidden shadow-lg" style={{width: '170px', height: '302px'}}>
+                  {v.src ? (
+                    <video
+                      className="w-full h-full object-cover"
+                      src={v.src}
+                      muted
+                      loop
+                      playsInline
+                    />
+                  ) : (
+                    <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900">
+                      <div className="w-14 h-14 rounded-full bg-white/10 border border-white/20 flex items-center justify-center mb-3">
+                        <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z"/>
+                        </svg>
+                      </div>
+                      <p className="text-gray-500 text-xs text-center px-4">{v.label}</p>
+                    </div>
+                  )}
+                  <div className="absolute bottom-3 left-3 bg-black/70 text-white text-xs px-2 py-0.5 rounded-full flex items-center gap-1">
+                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    {v.views}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* VSL Video */}
+        <div className="max-w-4xl mx-auto px-4 pb-16">
+          <div className="glass-card p-4 sm:p-8 rounded-3xl">
+            <div className="aspect-video rounded-xl overflow-hidden">
+              <iframe
+                src="https://www.loom.com/embed/80cbdd217eb4479ab18d2aab6c18f283"
+                title="UGC Content Machine video"
+                allowFullScreen
+                frameBorder="0"
+                className="w-full h-full"
+                onLoad={() => trackVideoPlay('UGC Landing - Content Machine Demo')}
+              ></iframe>
+            </div>
+          </div>
         </div>
 
         {/* Case Studies Section */}
