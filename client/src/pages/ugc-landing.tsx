@@ -21,10 +21,10 @@ const logos = [
 
 const ugcVideos = [
   'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/Tuneloom-%5BB3-C7-V1%5D-t_NEW-fo_VID-au_NewMoms25-34-an_Sleep-ad_ORGANICUGC-aw_PROBLEM%20AWARE-fe_N-A-d_15-04-2026%20copy%20%281%29%20%281%29.mp4',
-  'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/Synopsis-%5BB2-C6-V1%5D-t_NEW-fo_VID-au_WeightLoss-an_WeightLossJourney-ad_GREENSCREEN-aw_SOLUTION%20AWARE-fo_Mash-ups-d_22-06-2026%20copy%20%281%29.mp4',
-  'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/19-02-26%20Revise%20Adset%2018%20v1%20copy%20%281%29.mp4',
   'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/Revise-%5BB9-C21-V2%5D-t_EAR-fo_VID-au_Writers-an_ChatToDoc-ad_ORGANICUGC-aw_SOLUTION%20AWARE-fo_AIDA-d_26-05-2026%20copy.mp4',
   'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/19-02-26%20Revise%20Adset%2018%20v1%20copy%20%281%29%20%281%29.mp4',
+  'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/Synopsis-%5BB2-C6-V1%5D-t_NEW-fo_VID-au_WeightLoss-an_WeightLossJourney-ad_GREENSCREEN-aw_SOLUTION%20AWARE-fo_Mash-ups-d_22-06-2026%20copy%20%281%29.mp4',
+  'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/19-02-26%20Revise%20Adset%2018%20v1%20copy%20%281%29.mp4',
   'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/13-02-26%20Virlo%20Adset%2016%20copy.mp4',
   'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/03-02-26%20Wellspoken%20Adset%2028%20copy%20(1).mp4',
 ];
