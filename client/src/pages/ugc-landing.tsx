@@ -26,7 +26,7 @@ const ugcVideos = [
   'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/19-02-26%20Revise%20Adset%2018%20v1%20copy%20%281%29%20%281%29.mp4',
   'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/Virlo%20Vid%204v1%20Sub%20copy.mp4',
   'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/13-02-26%20Virlo%20Adset%2016%20copy.mp4',
-  'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/03-02-26%20Wellspoken%20Adset%2028%20copy%20(1).mp4',
+  'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/03-02-26%20Wellspoken%20Adset%2028%20copy%20%281%29.mp4',
   'https://cdn.jsdelivr.net/gh/chesterxu1-spec/Movemore-Ad-Clips@main/Byrdseye-%5BB3-C10-V2%5D-t_NEW-fo_VID-au_45%20Affluent-an_INHERITANCE-ad_BEFOREANDAFTER-aw_PROBLEM%20AWARE-f_-d_17-06-2026.mp4',
 ];
 
