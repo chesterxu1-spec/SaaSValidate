@@ -87,7 +87,7 @@ export default function UGCLanding() {
             </h1>
 
             {/* Subheadline */}
-            <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">Watch the system we use to help app founders generate 100+ Million views, build a user base and grow to $40k+ MRR in 6 months of implementing the UGC Content Machine built for early stage apps.</p>
+            <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">Make profit or FULL REFUND</p>
 
             {/* CTA Button */}
             <Button
