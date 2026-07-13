@@ -75,8 +75,8 @@ export default function UGCLanding() {
             {/* ICP Callout */}
             <div className="inline-block bg-gray-900 text-white px-3 sm:px-6 py-1.5 sm:py-3 rounded-full mb-6 sm:mb-8 mx-2 sm:mx-0">
               <h2 className="text-xs sm:text-base md:text-lg font-medium sm:font-semibold tracking-wide leading-tight">
-                <span className="block sm:hidden">For App Founders who need traction</span>
-                <span className="hidden sm:block">For App Founders Who Need Traction Fast.</span>
+                <span className="block sm:hidden">Make profit or FULL REFUND</span>
+                <span className="hidden sm:block">Make profit or FULL REFUND</span>
               </h2>
             </div>
 
@@ -87,7 +87,7 @@ export default function UGCLanding() {
             </h1>
 
             {/* Subheadline */}
-            <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">Make profit or FULL REFUND</p>
+            <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">Watch the system we use to help app founders generate 100+ Million views, build a user base and grow to $40k+ MRR in 6 months of implementing the UGC Content Machine built for early stage apps.</p>
 
             {/* CTA Button */}
             <Button
