@@ -82,8 +82,8 @@ export default function UGCLanding() {
 
             {/* Main Heading */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-6 sm:mb-8 tracking-tight leading-tight lg:leading-[1.1] px-2 sm:px-0 pb-2 relative overflow-hidden shine-text">
-              <span className="block sm:hidden">Scale UA + Profit<br />or FULL REFUND</span>
-              <span className="hidden sm:block">Scale UA + Profit or FULL REFUND</span>
+              <span className="block sm:hidden">$40k+ MRR in 6 Months<br />with a UGC Content Machine</span>
+              <span className="hidden sm:block">$40k+ MRR in 6 Months with a<br />UGC Content Machine</span>
             </h1>
 
             {/* Subheadline */}
